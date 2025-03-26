@@ -3,26 +3,26 @@ import React from "react";
 const Home = () => {
   return (
     <div className="">
-      <div className="flex flex-col items-center justify-between mx-auto mb-10 md:max-w-7xl">
-        <div className="flex flex-col items-center w-full md:flex-row md:justify-between md:mt-5">
-          <div className="flex flex-col items-center justify-center w-[90%]  border border-black rounded-full pt-14 aspect-square md:w-[45%]">
-            <h1 className="md:text-[45px] text-[36px] font-semibold font-manrope">
+      <div className="flex flex-col items-center justify-between mx-auto mb-10 md:max-w-7xl md:mb-2">
+        <div className="flex flex-col items-center w-full md:flex-row md:gap-24 md:mt-5">
+          <div className="flex flex-col items-center justify-center w-[90%]  border border-black rounded-full pt-14 aspect-square md:w-[527px]">
+            <h1 className="md:text-[45px] text-[36px] font-semibold">
               ДИЗАЙН-БЮРО
             </h1>
-            <h1 className="md:text-[45px] text-[36px] font-semibold font-manrope text-[#e06767]">
+            <h1 className="md:text-[45px] text-[36px] font-semibold  text-[#9E4A45]">
               CHERES
             </h1>
-            <p className="text-xs font-light text-center font-manrope w-[192px] mt-4 md:w-[264px] md:text-lg">
+            <p className="text-xs font-light text-center font-manrope w-[192px] mt-4 md:w-[244px] md:text-base md:font-sans">
               разработка рабочей документации и визуализаций к дизайн-проектам
             </p>
             <button className="w-[145px] transition-all duration-500 h-12 font-xs text-white font-manrope font-medium bg-[#9e4a45] rounded-[60px] mt-5 md:w-[180px] md:h-14 hover:bg-white hover:border hover:border-[#9e4a45] hover:text-[#9e4a45]">
               УСЛУГИ
             </button>
           </div>
-          <div className="flex w-full homeImg h-[400px] bg-white md:w-[50%] md:h-[600px]"></div>
+          <div className="flex w-full homeImg h-[400px] bg-white md:w-[561px] md:h-[546px]"></div>
         </div>
       </div>
-      <div className="w-full bg-[#f1f1f1] py-10">
+      <div className="w-full bg-[#f1f1f1] py-10 md:py-14">
         <div className="flex flex-col px-4 mx-auto md:flex-row max-w-7xl md:items-start">
           <h1 className="text-xs font-bold font-manrope opacity-20 md:w-[335px] md:text-sm">
             ПОЧЕМУ МЫ
@@ -146,37 +146,37 @@ const Home = () => {
         </div>
       </div>
       <div className="flex flex-col px-4 mx-auto mt-10 mb-20 md:flex-row max-w-7xl md:items-start md:justify-start md:mt-20">
-        <h1 className="text-xs font-bold font-manrope opacity-20 md:w-[367px] md:text-sm">
+        <h1 className="text-xs font-bold font-manrope opacity-20 md:w-[190px] md:text-sm">
           УСЛУГИ
         </h1>
-        <div className="grid grid-cols-1 gap-10 mt-5 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-10 mt-5 md:grid-cols-2 md:gap-5">
           <div className="flex flex-col">
             <img
               src="https://optim.tildacdn.com/tild3232-3462-4364-b761-303064343464/-/cover/888x582/center/center/-/format/webp/WhatsApp_Image_2023-.jpeg.webp"
               alt="sf"
-              className="md:h-[400px] md:w-[990px]"
+              className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
             />
-            <h1 className="text-[18px] font-manrope font-medium mt-2">
+            <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
               ЧЕРТЕЖИ
             </h1>
           </div>
           <div className="flex flex-col">
             <img
-              src="https://optim.tildacdn.com/tild3661-3664-4163-b239-613437346665/-/cover/994x582/center/center/-/format/webp/noroot.jpg.webp"
+              src="/Images/eskiz.jpg"
               alt="sf"
-              className="md:h-[400px] md:w-[990px]"
+              className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
             />
-            <h1 className="text-[18px] font-manrope font-medium mt-2">
-              ИНФОПРОДУКТЫ
+            <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+              ЭСКИЗНЫЙ ПРОЕКТ
             </h1>
           </div>
           <div className="flex flex-col">
             <img
-              src="https://optim.tildacdn.com/tild3430-3231-4832-b464-343037633961/-/cover/888x582/center/center/-/format/webp/123fa220888184766f5b.jpg.webp"
+              src="/Images/vv.jpg"
               alt="sf"
-              className="md:h-[400px] md:w-[990px]"
+              className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
             />
-            <h1 className="text-[18px] font-manrope font-medium mt-2">
+            <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
               ВИЗУАЛИЗАЦИЯ
             </h1>
           </div>
@@ -184,9 +184,9 @@ const Home = () => {
             <img
               src="https://optim.tildacdn.com/tild3664-3465-4438-b439-333032316435/-/cover/994x584/center/center/-/format/webp/Frame_23-min_1.jpg.webp"
               alt="sf"
-              className="md:h-[400px] md:w-[990px]"
+              className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
             />
-            <h1 className="text-[18px] font-manrope font-medium mt-2">
+            <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
               ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
             </h1>
           </div>

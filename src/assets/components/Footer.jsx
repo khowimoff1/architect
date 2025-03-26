@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full px-4 py-10 bg-black">
+    <div className="w-full px-4 py-10 bg-[#222222]">
       <div className="grid grid-cols-1 mx-auto md:grid-cols-4 md:max-w-7xl">
         <div className="flex flex-col">
           <NavLink to={"/"} className={"bg-white w-[120px] h-[76px]"}>
@@ -91,12 +91,12 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <h1 className="text-[#525252] mt-5 text-xs md:text-[10px] font-light font-manrope">
+          <h1 className="text-[#525252] mt-5 text-xs md:text-[12px] font-light font-manrope md:pr-5">
             * Instagram — организация, запрещëнная на территории РФ
           </h1>
           <a
             href=""
-            className="text-[#7a7a7a] mt-5 text-xs md:text-[10px] font-light font-manrope"
+            className="text-[#7a7a7a] mt-5 text-xs md:text-[12px] font-light font-manrope"
           >
             разработка сайта: st_malugina
           </a>
@@ -108,14 +108,14 @@ const Footer = () => {
           <div className="flex flex-col">
             <NavLink
               to={"/drawings"}
-              className={"text-[#ffffff] text-xs font-light font-manrope"}
+              className={"text-[#ffffff] text-xs font-light "}
             >
               Чертежи
             </NavLink>
             <NavLink
               to={"/visualization"}
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               Визуализация
@@ -123,7 +123,7 @@ const Footer = () => {
             <NavLink
               to={"/planning"}
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               Планировочное решение
@@ -132,19 +132,19 @@ const Footer = () => {
         </div>
         <div className="flex flex-col mt-10">
           <h1 className="text-sm font-medium font-manrope text-[#525252] mb-[14px] md:text-xs">
-            ИНФОПРОДУКТЫ
+            ЭСКИЗНЫЙ ПРОЕКТ
           </h1>
           <div className="flex flex-col">
             <a
               href=""
-              className={"text-[#ffffff] text-xs font-light font-manrope"}
+              className={"text-[#ffffff] text-xs font-light "}
             >
-              Штриховки ArchiCAD
+              Штриховки Revit
             </a>
             <a
               href=""
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               Инструкция «Наполнение чертежей»
@@ -152,7 +152,7 @@ const Footer = () => {
             <a
               href=""
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               Сложные профили 3в1
@@ -160,7 +160,7 @@ const Footer = () => {
             <a
               href=""
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               Чек-лист "Проверка чертежей"
@@ -168,19 +168,19 @@ const Footer = () => {
             <a
               href=""
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               ТГ канал
             </a>
-            <a
+            {/* <a
               href=""
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               Библиотеки для ArchiCAD
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="flex flex-col mt-10">
@@ -190,29 +190,29 @@ const Footer = () => {
           <div className="flex flex-col">
             <a
               href=""
-              className={"text-[#ffffff] text-xs font-light font-manrope"}
+              className={"text-[#ffffff] text-xs font-light "}
             >
               Политика конфиденциальности
             </a>
             <a
               href=""
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
-              Договор оферты Инфопродукты
+              Договор оферты Эскиз
             </a>
             <a
               href=""
               className={
-                "text-[#ffffff] text-xs font-light font-manrope mt-[10px]"
+                "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               Договор оферты Чертежи
             </a>
-            <span className="text-[#525252] text-xs font-light font-manrope mt-10">ИП Голдобина Екатерина Сергеевна</span>
-            <span className="text-[#525252] text-xs font-light font-manrope mt-1">ИНН 665602344669</span>
-            <span className="text-[#525252] text-xs font-light font-manrope mt-1">ОГРН 324665800007999</span>
+            {/* <span className="text-[#ADADAD] text-xs font-light font-manrope mt-10">ИП Голдобина Екатерина Сергеевна</span>
+            <span className="text-[#ADADAD] text-xs font-light font-manrope mt-1">ИНН 665602344669</span>
+            <span className="text-[#ADADAD] text-xs font-light font-manrope mt-1">ОГРН 324665800007999</span> */}
           </div>
         </div>
       </div>
