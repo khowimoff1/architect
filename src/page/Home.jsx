@@ -9,9 +9,9 @@ const Home = () => {
             <h1 className="md:text-[45px] text-[36px] font-semibold">
               ДИЗАЙН-БЮРО
             </h1>
-            <h1 className="md:text-[45px] text-[36px] font-semibold  text-[#9E4A45]">
+            {/* <h1 className="md:text-[45px] text-[36px] font-semibold  text-[#9E4A45]">
               CHERES
-            </h1>
+            </h1> */}
             <p className="text-xs font-light text-center font-manrope w-[192px] mt-4 md:w-[244px] md:text-base md:font-sans">
               разработка рабочей документации и визуализаций к дизайн-проектам
             </p>
@@ -56,7 +56,7 @@ const Home = () => {
             <div className="flex items-center justify-center md:items-start">
               <div className="flex flex-col px-6 md:px-0 md:pr-6">
                 <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
-                  3+
+                  4+
                 </h1>
                 <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope md:w-[120px] ">
                   лет существует дизайн-бюро
@@ -64,7 +64,7 @@ const Home = () => {
               </div>
               <div className="flex flex-col px-6 border-l-2 border-gray-400">
                 <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
-                  8000+
+                  6000+
                 </h1>
                 <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope md:w-[140px] ">
                   м2 разработанной площади
@@ -73,7 +73,7 @@ const Home = () => {
             </div>
             <div className="flex flex-col items-center my-8 border-gray-400 md:my-0 md:border-l-2 md:pl-5 md:items-start ">
               <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
-                65+
+                45+
               </h1>
               <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope text-center md:text-start ">
                 дизайнеров реализовали <br /> проекты с нами
@@ -82,7 +82,7 @@ const Home = () => {
             <div className="flex items-center justify-center md:items-start">
               <div className="flex flex-col px-6 pr-16 border-gray-400 md:border-l-2 md:ml-5 md:pr-5">
                 <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
-                  5
+                  6
                 </h1>
                 <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope md:w-[90px] ">
                   лет общий опыт работы
@@ -162,7 +162,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col">
             <img
-              src="/Images/eskiz.jpg"
+              src="/Images/abort.png"
               alt="sf"
               className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
             />
@@ -182,7 +182,7 @@ const Home = () => {
           </div>
           <div className="flex flex-col">
             <img
-              src="https://optim.tildacdn.com/tild3664-3465-4438-b439-333032316435/-/cover/994x584/center/center/-/format/webp/Frame_23-min_1.jpg.webp"
+              src="Images/d.png"
               alt="sf"
               className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
             />

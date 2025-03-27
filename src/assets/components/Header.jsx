@@ -59,11 +59,11 @@ const Header = () => {
             </NavLink>
           </li>
         </ul>
-        <div className="fixed bg-[#f5f5f5] right-2 md:hidden rounded-full p-2 bg-opacity-50" onClick={() => setMenu(true)}>
+        <div className="fixed bg-[#f5f5f5] right-2 md:hidden rounded-full p-2 bg-opacity-50 z-50" onClick={() => setMenu(true)}>
           <IoIosMenu className="text-4xl " />
         </div>
         {menu && (
-          <div className="fixed top-0 left-0 z-10 flex w-full min-h-screen duration-300 transform bg-black/50">
+          <div className="fixed top-0 left-0 z-[51] flex w-full min-h-screen duration-300 transform bg-black/50">
             <div
               className="flex w-[30%] h-full"
               onClick={() => setMenu(false)}
