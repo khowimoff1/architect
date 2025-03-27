@@ -4,7 +4,6 @@ import Home from "../page/Home";
 import Drawings from "../page/Drawings";
 import Visualization from "../page/Visualization";
 import Planning from "../page/Planning";
-import Infoproduct from "../page/Infoproduct";
 
 export const router = createBrowserRouter([
   {
@@ -26,10 +25,6 @@ export const router = createBrowserRouter([
       {
         path: "/planning",
         element: <Planning />,
-      },
-      {
-        path: "/infoproduct",
-        element: <Infoproduct />,
       },
     ],
   },

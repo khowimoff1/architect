@@ -5,14 +5,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRef } from "react";
-const Swiperr = () => {
+const Swiperr = ({images,classs}) => {
+  console.log(classs)     
   const swiperRef = useRef(null);
-  const images = [
-    "https://optim.tildacdn.com/tild3263-3131-4637-a538-353665316536/-/resize/600x400/-/format/webp/1e0a80ac-5f2b-41e0-9.jpeg.webp",
-    "https://optim.tildacdn.com/tild6233-6639-4262-b065-636361643062/-/resize/600x400/-/format/webp/556de6ac-a22c-49b5-8.jpeg.webp",
-    "https://optim.tildacdn.com/tild6366-6233-4632-b637-666330303637/-/resize/600x400/-/format/webp/46393b97-1d34-4b07-b.jpeg.webp",
-    "https://optim.tildacdn.com/tild3831-3164-4465-a438-616362616662/-/resize/600x400/-/format/webp/b229063f-b112-4931-9.jpeg.webp",
-  ];
   return (
     <div className="relative w-full">
       <button
@@ -42,12 +37,12 @@ const Swiperr = () => {
         modules={[Navigation]}
         className="w-full"
       >
-        {images.map((item, index) => (
-          <SwiperSlide key={index} className="flex flex-col items-center">
+        {images?.map((item, index) => (
+          <SwiperSlide key={index} className="flex flex-col items-center h-full">
             <img
               src={item}
               alt="slide"
-              className="object-cover w-full h-full "
+              className={`object-cover w-full ${classs}`}
             />
           </SwiperSlide>
         ))}

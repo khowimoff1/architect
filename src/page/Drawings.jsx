@@ -4,6 +4,12 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 import { MdError } from "react-icons/md";
 
 const Drawings = () => {
+  const images = [
+    "https://optim.tildacdn.com/tild3263-3131-4637-a538-353665316536/-/resize/600x400/-/format/webp/1e0a80ac-5f2b-41e0-9.jpeg.webp",
+    "https://optim.tildacdn.com/tild6233-6639-4262-b065-636361643062/-/resize/600x400/-/format/webp/556de6ac-a22c-49b5-8.jpeg.webp",
+    "https://optim.tildacdn.com/tild6366-6233-4632-b637-666330303637/-/resize/600x400/-/format/webp/46393b97-1d34-4b07-b.jpeg.webp",
+    "https://optim.tildacdn.com/tild3831-3164-4465-a438-616362616662/-/resize/600x400/-/format/webp/b229063f-b112-4931-9.jpeg.webp",
+  ];
   return (
     <div>
       <div className="flex flex-col-reverse mx-auto max-w-7xl md:flex-row md:justify-between">
@@ -191,7 +197,7 @@ const Drawings = () => {
               </h1>
               <h1 className="font-manrope text-[17px] font-light mt-2 opacity-70 md:w-[361px] md:text-[13px]">
                 Предоставление заказчику согласованного альбома в формате PDF,
-                исходного файла в формате .pla (ArсhiCAD)
+                исходного файла в формате .pla
               </h1>
             </div>
           </div>
@@ -251,11 +257,8 @@ const Drawings = () => {
             <div className="flex flex-col md:flex-row md:gap-10 md:pr-10">
               <div className="w-full  md:w-[560px] mt-6">
                 <div className="w-full h-[282px] md:h-[390px]">
-                  <Swiperr />
+                  <Swiperr images={images}/>
                 </div>
-                <button className="border z-50 border-black rounded-[40px] w-full h-[53px] mt-5 text-[18px] font-semibold transition-all duration-300 hover:bg-black hover:text-white">
-                  ПОСМОТРЕТЬ АЛЬБОМ ПОЛНОСТЬЮ
-                </button>
               </div>
               <div className="mt-6 md:w-full">
                 <div>
@@ -285,7 +288,7 @@ const Drawings = () => {
                     </li>
                   </ul>
                 </div>
-                <di6 className="flex items-center justify-between pt-6 mt-8 border-t-2 border-gray-300">
+                <div className="flex items-center justify-between pt-6 mt-8 border-t-2 border-gray-300">
                   <div>
                     <div className="relative flex items-center gap-1">
                       <h1 className="text-[16px] font-manrope font-semibold">
@@ -300,14 +303,13 @@ const Drawings = () => {
                       <h1 className="text-[17px] font-manrope font-semibold">
                         Стоимость:
                       </h1>
-                      <p className="text-[17px] opacity-70">700₽/м2</p>
+                      <p className="text-[17px] opacity-70">4$/м2</p>
                     </div>
-                    6{" "}
                   </div>
                   <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[134px] h-[134px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
                     ЗАКАЗАТЬ
                   </button>
-                </di6>
+                </div>
               </div>
             </div>
           </div>
@@ -318,11 +320,8 @@ const Drawings = () => {
             <div className="flex flex-col md:flex-row md:gap-10 md:pr-10">
               <div className="w-full  md:w-[560px] mt-6">
                 <div className="w-full h-[282px] md:h-[390px]">
-                  <Swiperr />
+                  <Swiperr images={images} />
                 </div>
-                <button className="border z-50 border-black rounded-[40px] w-full h-[53px] mt-5 text-[18px] font-semibold transition-all duration-300 hover:bg-black hover:text-white">
-                  ПОСМОТРЕТЬ АЛЬБОМ ПОЛНОСТЬЮ
-                </button>
               </div>
               <div className="mt-6 md:w-full">
                 <div>
@@ -373,7 +372,7 @@ const Drawings = () => {
                       <h1 className="text-[16px] font-manrope font-semibold">
                         Стоимость:
                       </h1>
-                      <p className="text-[16px] opacity-70">900₽/м2</p>
+                      <p className="text-[16px] opacity-70">6$/м2</p>
                     </div>
                   </div>
                   <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[134px] h-[134px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
@@ -390,11 +389,8 @@ const Drawings = () => {
             <div className="flex flex-col md:flex-row md:gap-10 md:pr-10">
               <div className="w-full  md:w-[560px] mt-6">
                 <div className="w-full h-[282px] md:h-[390px]">
-                  <Swiperr />
+                  <Swiperr images={images} />
                 </div>
-                <button className="border z-50 border-black rounded-[40px] w-full h-[53px] mt-5 text-[18px] font-semibold transition-all duration-300 hover:bg-black hover:text-white">
-                  ПОСМОТРЕТЬ АЛЬБОМ ПОЛНОСТЬЮ
-                </button>
               </div>
               <div className="mt-6 md:w-full">
                 <div>
@@ -456,7 +452,7 @@ const Drawings = () => {
                       <h1 className="text-[16px] font-manrope font-semibold">
                         Стоимость:
                       </h1>
-                      <p className="text-[16px] opacity-70">900₽/м2</p>
+                      <p className="text-[16px] opacity-70">8$/м2</p>
                     </div>
                   </div>
                   <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[134px] h-[134px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">

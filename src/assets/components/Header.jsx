@@ -50,14 +50,6 @@ const Header = () => {
               ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              to={"/infoproduct"}
-              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
-            >
-              ИНФОПРОДУКТЫ
-            </NavLink>
-          </li>
         </ul>
         <div className="fixed bg-[#f5f5f5] right-2 md:hidden rounded-full p-2 bg-opacity-50 z-50" onClick={() => setMenu(true)}>
           <IoIosMenu className="text-4xl " />

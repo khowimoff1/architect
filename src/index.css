@@ -25,3 +25,9 @@ body{
     background-repeat: no-repeat;
     background-position: center center;
 }
+.visual{
+    background-image: url("https://optim.tildacdn.com/tild3430-3231-4832-b464-343037633961/-/format/webp/123fa220888184766f5b.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
