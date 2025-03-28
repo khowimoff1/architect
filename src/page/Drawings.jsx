@@ -1,7 +1,6 @@
 import React from "react";
 import Swiperr from "../assets/components/Swiper";
 import { IoIosInformationCircleOutline } from "react-icons/io";
-import { MdError } from "react-icons/md";
 
 const Drawings = () => {
   const images = [
