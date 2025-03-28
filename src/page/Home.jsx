@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -15,9 +16,11 @@ const Home = () => {
             <p className="text-xs font-light text-center font-manrope w-[192px] mt-4 md:w-[244px] md:text-base md:font-sans">
               разработка рабочей документации и визуализаций к дизайн-проектам
             </p>
-            <button className="w-[145px] transition-all duration-500 h-12 font-xs text-white font-manrope font-medium bg-[#9e4a45] rounded-[60px] mt-5 md:w-[180px] md:h-14 hover:bg-white hover:border hover:border-[#9e4a45] hover:text-[#9e4a45]">
-              УСЛУГИ
-            </button>
+            <a href="#uslugi">
+              <button className="w-[145px] transition-all duration-500 h-12 font-xs text-white font-manrope font-medium bg-[#9e4a45] rounded-[60px] mt-5 md:w-[180px] md:h-14 hover:bg-white hover:border hover:border-[#9e4a45] hover:text-[#9e4a45]">
+                УСЛУГИ
+              </button>
+            </a>
           </div>
           <div className="flex w-full homeImg h-[400px] bg-white md:w-[561px] md:h-[546px]"></div>
         </div>
@@ -145,51 +148,62 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-4 mx-auto mt-10 mb-20 md:flex-row max-w-7xl md:items-start md:justify-start md:mt-20">
+      <div
+        id="uslugi"
+        className="flex flex-col px-4 mx-auto mt-10 mb-20 md:flex-row max-w-7xl md:items-start md:justify-start md:mt-20"
+      >
         <h1 className="text-xs font-bold font-manrope opacity-20 md:w-[190px] md:text-sm">
           УСЛУГИ
         </h1>
         <div className="grid grid-cols-1 gap-10 mt-5 md:grid-cols-2 md:gap-5">
-          <div className="flex flex-col">
-            <img
-              src="https://optim.tildacdn.com/tild3232-3462-4364-b761-303064343464/-/cover/888x582/center/center/-/format/webp/WhatsApp_Image_2023-.jpeg.webp"
-              alt="sf"
-              className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
-            />
-            <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
-              ЧЕРТЕЖИ
-            </h1>
-          </div>
-          <div className="flex flex-col">
-            <img
-              src="/Images/abort.png"
-              alt="sf"
-              className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
-            />
-            <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
-              ЭСКИЗНЫЙ ПРОЕКТ
-            </h1>
-          </div>
-          <div className="flex flex-col">
-            <img
-              src="/Images/vv.jpg"
-              alt="sf"
-              className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
-            />
-            <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
-              ВИЗУАЛИЗАЦИЯ
-            </h1>
-          </div>
-          <div className="flex flex-col">
-            <img
-              src="Images/d.png"
-              alt="sf"
-              className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
-            />
-            <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
-              ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
-            </h1>
-          </div>
+          <NavLink to={"/drawings"}>
+            <div className="flex flex-col">
+              <img
+                src="https://optim.tildacdn.com/tild3232-3462-4364-b761-303064343464/-/cover/888x582/center/center/-/format/webp/WhatsApp_Image_2023-.jpeg.webp"
+                alt="sf"
+                className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
+              />
+              <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+                ЧЕРТЕЖИ
+              </h1>
+            </div>
+          </NavLink>
+          <NavLink to={"/"}>
+            <div className="flex flex-col">
+              <img
+                src="/Images/abort.png"
+                alt="sf"
+                className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
+              />
+              <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+                ЭСКИЗНЫЙ ПРОЕКТ
+              </h1>
+            </div>
+          </NavLink>
+          <NavLink to={"/visualization"}>
+            <div className="flex flex-col">
+              <img
+                src="/Images/vv.jpg"
+                alt="sf"
+                className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
+              />
+              <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+                ВИЗУАЛИЗАЦИЯ
+              </h1>
+            </div>
+          </NavLink>
+          <NavLink to={"/planning"}>
+            <div className="flex flex-col">
+              <img
+                src="Images/d.png"
+                alt="sf"
+                className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
+              />
+              <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+                ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
+              </h1>
+            </div>
+          </NavLink>
         </div>
       </div>
     </div>

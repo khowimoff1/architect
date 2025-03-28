@@ -106,14 +106,6 @@ const Header = () => {
                     ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
                   </NavLink>
                 </li>
-                <li
-                  onClick={() => setMenu(false)}
-                  className="text-sm font-light font-manrope"
-                >
-                  <NavLink to="/infoproduct" className="hover:text-blue-500">
-                    ИНФОПРОДУКТЫ
-                  </NavLink>
-                </li>
               </ul>
             </motion.div>
           </div>

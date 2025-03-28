@@ -25,12 +25,16 @@ const Drawings = () => {
               для любых площадей
             </p>
             <div className="flex flex-row-reverse items-center justify-between md:justify-start md:flex-row md:gap-3">
-              <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[185px] h-[53px] hover:bg-white hover:text-[#9e4a45]">
-                ТАРИФЫ
-              </button>
-              <button className="text-[16px] transition-all duration-500 text-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[205px] h-[53px] hover:bg-[#9e4a45] hover:text-white">
-                ПОРТФОЛИО
-              </button>
+              <a href="#tarify">
+                <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[185px] h-[53px] hover:bg-white hover:text-[#9e4a45]">
+                  ТАРИФЫ
+                </button>
+              </a>
+              <a href="#protfolio">
+                <button className="text-[16px] transition-all duration-500 text-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[205px] h-[53px] hover:bg-[#9e4a45] hover:text-white">
+                  ПОРТФОЛИО
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -87,9 +91,11 @@ const Drawings = () => {
                 Мы заключаем договор (с ИП со стороны CherES.Buro), где
                 прописаны обязательства сторон. Вы получаете чек об оплате
               </p>
-              <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[230px] h-[53px] hover:bg-white hover:text-[#9e4a45] mt-5">
-                СМОТРЕТЬ ДОГОВОР
-              </button>
+              <a href="https://disk.yandex.ru/d/UbGbwOOw9njnEw">
+                <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[230px] h-[53px] hover:bg-white hover:text-[#9e4a45] mt-5">
+                  СМОТРЕТЬ ДОГОВОР
+                </button>
+              </a>
               <div className="absolute bottom-0 left-0 flex items-end md:hidden">
                 <span className="block w-[1.34px] h-[20px] bg-[#000000]"></span>
                 <span className="block h-[1px] w-[20px] bg-[#000000]"></span>
@@ -237,14 +243,19 @@ const Drawings = () => {
                   </p>
                 </div>
               </div>
-              <button className="absolute md:static -bottom-[110px] right-[30px] flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[157px] h-[157px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
-                СМОТРЕТЬ ТЗ
-              </button>
+              <a href="https://disk.yandex.ru/d/A-WJB4YWLOr5jw">
+                <button className="absolute md:static -bottom-[110px] right-[30px] flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[157px] h-[157px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
+                  СМОТРЕТЬ ТЗ
+                </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full px-4 mx-auto mt-20 md:flex-row max-w-7xl md:items-start">
+      <div
+        id="tarify"
+        className="flex flex-col w-full px-4 mx-auto mt-20 md:flex-row max-w-7xl md:items-start"
+      >
         <h1 className="text-xs font-bold font-manrope opacity-20 md:w-[230px] md:text-sm md:pr-10">
           ТАРИФЫ
         </h1>
@@ -256,7 +267,7 @@ const Drawings = () => {
             <div className="flex flex-col md:flex-row md:gap-10 md:pr-10">
               <div className="w-full  md:w-[560px] mt-6">
                 <div className="w-full h-[282px] md:h-[390px]">
-                  <Swiperr images={images}/>
+                  <Swiperr images={images} />
                 </div>
               </div>
               <div className="mt-6 md:w-full">
@@ -514,7 +525,10 @@ const Drawings = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full px-4 mx-auto mt-20 mb-10 max-w-7xl md:items-start">
+      <div
+        id="protfolio"
+        className="flex flex-col w-full px-4 mx-auto mt-20 mb-10 max-w-7xl md:items-start"
+      >
         <h1 className="text-xs font-bold font-manrope opacity-20 md:w-[230px] md:text-sm md:pr-10">
           ПОРТФОЛИО
         </h1>
@@ -534,7 +548,7 @@ const Drawings = () => {
             alt="3"
             className="w-[190px] h-[125px] md:w-[295px] md:h-[199px]"
           />
-           <img
+          <img
             src="https://optim.tildacdn.com/tild3131-6236-4731-b165-363063346532/-/resize/300x200/-/format/webp/IMG_1833.jpeg.webp"
             alt="4"
             className="w-[190px] h-[125px] md:w-[295px] md:h-[199px]"
@@ -554,7 +568,7 @@ const Drawings = () => {
             alt="3"
             className="w-[190px] h-[125px] md:w-[295px] md:h-[199px]"
           />
-           <img
+          <img
             src="https://optim.tildacdn.com/tild3666-3936-4266-a233-613962353537/-/resize/300x200/-/format/webp/photo_2024-11-11_17-.jpg.webp"
             alt="4"
             className="w-[190px] h-[125px] md:w-[295px] md:h-[199px]"

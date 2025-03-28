@@ -6,7 +6,6 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { useRef } from "react";
 const Swiperr = ({images,classs}) => {
-  console.log(classs)     
   const swiperRef = useRef(null);
   return (
     <div className="relative w-full">
