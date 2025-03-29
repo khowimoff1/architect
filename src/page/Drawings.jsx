@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Swiperr from "../assets/components/Swiper";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import Form from "../assets/components/Form";
 
 const Drawings = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [form, setForm] = useState([]);
+
   const images = [
     "https://optim.tildacdn.com/tild3263-3131-4637-a538-353665316536/-/resize/600x400/-/format/webp/1e0a80ac-5f2b-41e0-9.jpeg.webp",
     "https://optim.tildacdn.com/tild6233-6639-4262-b065-636361643062/-/resize/600x400/-/format/webp/556de6ac-a22c-49b5-8.jpeg.webp",
@@ -24,14 +29,14 @@ const Drawings = () => {
             <p className="text-[20px] font-light text-[#000000] my-3">
               для любых площадей
             </p>
-            <div className="flex flex-row-reverse items-center justify-between md:justify-start md:flex-row md:gap-3">
-              <a href="#tarify">
-                <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[185px] h-[53px] hover:bg-white hover:text-[#9e4a45]">
+            <div className="flex flex-row-reverse items-center justify-between gap-2 md:justify-start md:flex-row md:gap-3">
+              <a href="#tarify" className="w-[90%] md:w-[167px]">
+                <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-full h-[53px] hover:bg-white hover:text-[#9e4a45]">
                   ТАРИФЫ
                 </button>
               </a>
-              <a href="#protfolio">
-                <button className="text-[16px] transition-all duration-500 text-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[205px] h-[53px] hover:bg-[#9e4a45] hover:text-white">
+              <a href="#protfolio" className="w-full md:w-[217px]">
+                <button className="text-[16px] transition-all duration-500 text-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-full h-[53px] hover:bg-[#9e4a45] hover:text-white">
                   ПОРТФОЛИО
                 </button>
               </a>
@@ -79,7 +84,7 @@ const Drawings = () => {
           </h1>
           <div className="flex flex-col mt-5 md:flex-row md:mt-0 md:relative">
             <div className="flex flex-col items-center justify-center w-[100%]  border border-black rounded-full pt-14 aspect-square md:w-[330px]">
-              <p className="text-[18px] text-[#000000] font-light text-center w-[80%] md:w-auto md:px-3 md:font-sans font-manrope md:text-[14px] opacity-80 md:pb-[48px]">
+              <p className="text-[16px]  text-[#000000] font-light text-center w-[90%] md:w-auto md:px-3 md:font-sans font-manrope md:text-[14px] opacity-80 md:pb-[48px]">
                 Работа по «прозрачной» системе. Вы в любой момент можете узнать,
                 на каком этапе разработки сейчас находится ваш альбом.
                 <br />
@@ -87,7 +92,7 @@ const Drawings = () => {
               </p>
             </div>
             <div className="flex flex-col items-center justify-center relative w-[100%]  border border-black rounded-full pt-14 aspect-square md:w-[330px]">
-              <p className="text-[18px] text-[#000000] font-light text-center w-[90%] md:w-auto md:px-3 md:font-sans font-manrope opacity-80 md:text-[14px]">
+              <p className="text-[16px] text-[#000000] font-light text-center w-[90%] md:w-auto md:px-3 md:font-sans font-manrope opacity-80 md:text-[14px]">
                 Мы заключаем договор (с ИП со стороны CherES.Buro), где
                 прописаны обязательства сторон. Вы получаете чек об оплате
               </p>
@@ -275,7 +280,7 @@ const Drawings = () => {
                   <h1 className="text-[18px] font-manrope font-semibold">
                     Что входит:
                   </h1>
-                  <ul className="space-y-1 text-[19px] black pl-3 opacity-70 md:text-[12px]">
+                  <ul className="space-y-1 text-[15px] black pl-3 opacity-70 md:text-[12px]">
                     <li className="flex items-center gap-2">
                       <span className="block w-2 h-2 bg-black rounded-full"></span>
                       Чертежи
@@ -301,22 +306,54 @@ const Drawings = () => {
                 <div className="flex items-center justify-between pt-6 mt-8 border-t-2 border-gray-300">
                   <div>
                     <div className="relative flex items-center gap-1">
-                      <h1 className="text-[16px] font-manrope font-semibold">
+                      <h1 className="text-[15px] font-manrope font-semibold">
                         Сроки:
                       </h1>
-                      <p className="text-[16px] opacity-70">
+                      <p className="text-[15px] opacity-70">
                         100м2 ~ 14-20 дней
                       </p>
-                      <IoIosInformationCircleOutline className="text-[34px] absolute -right-10" />
+                      <span className="absolute -right-10 group">
+                        <IoIosInformationCircleOutline className="text-[34px] " />
+                        <div className="absolute space-y-2 z-10 md:left-1/2 left-[0px] -translate-x-1/2 top-[120%] bg-white text-black text-[14px] p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[300px] hidden group-hover:block">
+                          <span className="font-bold">SOS:</span> + 200₽/м2 к
+                          стоимости проекта Сроки: 7-10 дней <br />{" "}
+                          <p>
+                            Укажите, если вам необходимо разработать альбом в
+                            сжатые сроки. С
+                          </p>
+                          <br />
+                          <p>
+                            Объекты площадью от 200м2 рассчитываются
+                            индивидуально
+                          </p>
+                        </div>
+                      </span>
                     </div>
                     <div className="flex items-center gap-1 pt-6 mt-6 border-t-2 border-gray-300">
-                      <h1 className="text-[17px] font-manrope font-semibold">
+                      <h1 className="text-[15px] font-manrope font-semibold">
                         Стоимость:
                       </h1>
-                      <p className="text-[17px] opacity-70">4$/м2</p>
+                      <p className="text-[15px] opacity-70">4$/м2</p>
                     </div>
                   </div>
-                  <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[134px] h-[134px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
+                  <button
+                    onClick={() => {
+                      setForm({
+                        title: "ТАРИФ МИНИМАЛЬНЫЙ",
+                        li: [
+                          "Чертежи",
+                          "⁠Необходимые для реализации узлы 2Д/3Д",
+                          "3Д-виды",
+                          "Спецификации",
+                          "2 круга бесплатных правок",
+                        ],
+                        srok: "100м2 ~ 14-20 дней",
+                        stmoist: " 4$/м2",
+                      });
+                      setIsOpen(true);
+                    }}
+                    className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[35%] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square"
+                  >
                     ЗАКАЗАТЬ
                   </button>
                 </div>
@@ -338,14 +375,14 @@ const Drawings = () => {
                   <h1 className="text-[18px] font-manrope font-semibold">
                     Что входит:
                   </h1>
-                  <ul className="space-y-1 text-[19px] black pl-3 opacity-70 md:text-[12px]">
+                  <ul className="space-y-1 text-[15px] black pl-3 opacity-70 md:text-[12px]">
                     <li className="flex items-center gap-2">
                       <span className="block w-2 h-2 bg-black rounded-full"></span>
                       Чертежи
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="block w-2 h-2 bg-black rounded-full"></span>
-                      Необходимые для реализации узлы 2Д/3Д
+                      Необходимые для реализации узлы 2Д
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="block w-2 h-2 bg-black rounded-full"></span>
@@ -370,22 +407,55 @@ const Drawings = () => {
                 <div className="flex items-center justify-between pt-6 mt-8 border-t-2 border-gray-300">
                   <div>
                     <div className="relative flex items-center gap-1">
-                      <h1 className="text-[16px] font-manrope font-semibold">
+                      <h1 className="text-[15px] font-manrope font-semibold">
                         Сроки:
                       </h1>
-                      <p className="text-[16px] opacity-70">
+                      <p className="text-[15px] opacity-70">
                         100м2 ~ 16-25 дней
                       </p>
-                      <IoIosInformationCircleOutline className="text-[34px] absolute -right-10" />
+                      <span className="absolute -right-10 group">
+                        <IoIosInformationCircleOutline className="text-[34px] " />
+                        <div className="absolute space-y-2 z-10 md:left-1/2 left-[0px] -translate-x-1/2 top-[120%] bg-white text-black text-[14px] p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[300px] hidden group-hover:block">
+                          <span className="font-bold">SOS:</span> + 200₽/м2 к
+                          стоимости проекта <br />{" "}
+                          <p>
+                            Укажите, если вам необходимо разработать альбом в
+                            сжатые сроки. Сроки 100м2 ~ 10-14 дней.
+                          </p>
+                          <br />
+                          <p>
+                            Объекты площадью от 200м2 рассчитываются
+                            индивидуально
+                          </p>
+                        </div>
+                      </span>
                     </div>
                     <div className="flex items-center gap-1 pt-6 mt-6 border-t-2 border-gray-300">
-                      <h1 className="text-[16px] font-manrope font-semibold">
+                      <h1 className="text-[15px] font-manrope font-semibold">
                         Стоимость:
                       </h1>
-                      <p className="text-[16px] opacity-70">6$/м2</p>
+                      <p className="text-[15px] opacity-70">6$/м2</p>
                     </div>
                   </div>
-                  <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[134px] h-[134px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
+                  <button
+                    onClick={() => {
+                      setForm({
+                        title: "ТАРИФ СТАНДАРТ",
+                        li: [
+                          "Чертежи",
+                          "⁠Необходимые для реализации узлы 2Д",
+                          "Развертки по всем помещениям",
+                          "Спецификации",
+                          "Чертежи мебели индивидуального изготовления 2д",
+                          "2 круга бесплатных правок",
+                        ],
+                        srok: "100м2 ~ 14-20 дней",
+                        stmoist: " 6$/м2",
+                      });
+                      setIsOpen(true);
+                    }}
+                    className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[35%] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square"
+                  >
                     ЗАКАЗАТЬ
                   </button>
                 </div>
@@ -407,7 +477,7 @@ const Drawings = () => {
                   <h1 className="text-[18px] font-manrope font-semibold">
                     Что входит:
                   </h1>
-                  <ul className="space-y-1 text-[19px] black pl-3 opacity-70 md:text-[12px]">
+                  <ul className="space-y-1 text-[15px] black pl-3 opacity-70 md:text-[12px]">
                     <li className="flex items-center gap-2">
                       <span className="block w-2 h-2 bg-black rounded-full"></span>
                       Чертежи
@@ -450,22 +520,56 @@ const Drawings = () => {
                 <div className="flex items-center justify-between pt-6 mt-8 border-t-2 border-gray-300">
                   <div>
                     <div className="relative flex items-center gap-1">
-                      <h1 className="text-[16px] font-manrope font-semibold">
+                      <h1 className="text-[15kpx] font-manrope font-semibold">
                         Сроки:
                       </h1>
-                      <p className="text-[16px] opacity-70">
+                      <p className="text-[15kpx] opacity-70">
                         100м2 ~ 16-25 дней
                       </p>
-                      <IoIosInformationCircleOutline className="text-[34px] absolute -right-10" />
+                      <span className="absolute -right-10 group">
+                        <IoIosInformationCircleOutline className="text-[34px] " />
+                        <div className="absolute space-y-2 z-10 md:left-1/2 left-[0px] -translate-x-1/2 top-[120%] bg-white text-black text-[14px] p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[300px] hidden group-hover:block">
+                          <span className="font-bold">SOS:</span> + 200₽/м2 к
+                          стоимости проекта <br />{" "}
+                          <p>
+                            Укажите, если вам необходимо разработать альбом в
+                            сжатые сроки. Сроки 100м2 ~ 15-18 дней.
+                          </p>
+                          <br />
+                          <p>
+                            Объекты площадью от 200м2 рассчитываются
+                            индивидуально
+                          </p>
+                        </div>
+                      </span>
                     </div>
                     <div className="flex items-center gap-1 pt-6 mt-6 border-t-2 border-gray-300">
-                      <h1 className="text-[16px] font-manrope font-semibold">
+                      <h1 className="text-[15px] font-manrope font-semibold">
                         Стоимость:
                       </h1>
-                      <p className="text-[16px] opacity-70">8$/м2</p>
+                      <p className="text-[15px] opacity-70">8$/м2</p>
                     </div>
                   </div>
-                  <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[134px] h-[134px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
+                  <button
+                    onClick={() => {
+                      setForm({
+                        title: "ТАРИФ ПРЕМИУМ",
+                        li: [
+                          "Чертежи",
+                          "⁠Необходимые для реализации узлы 2Д",
+                          "3д-виды",
+                          "Развертки по всем помещениям",
+                          "Спецификации",
+                          "Чертежи мебели индивидуального изготовления 2д",
+                          "2 круга бесплатных правок",
+                        ],
+                        srok: "100м2 ~ 18-20 дней",
+                        stmoist: " 8$/м2",
+                      });
+                      setIsOpen(true);
+                    }}
+                    className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[35%] aspect-square rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]"
+                  >
                     ЗАКАЗАТЬ
                   </button>
                 </div>
@@ -473,10 +577,10 @@ const Drawings = () => {
             </div>
           </div>
           <div className="flex w-full px-4 py-5 mx-auto items-start bg-[#f1f1f1] gap-4">
-            <div className="w-[57px] h-[25px] bg-red-900 rounded-full flex text-white items-center justify-center md:w-[30px] md:h-[30px]">
-              !
+            <div className="w-[25px] h-[25px] bg-red-900 rounded-full flex text-white items-center justify-center md:w-[30px] md:h-[30px]">
+              <span className="text-xs">!</span>
             </div>
-            <h1 className="font-semibold text-[18px]">
+            <h1 className="font-semibold text-[18px] w-[90%] md:w-auto">
               ВАЖНО:{" "}
               <span className="font-light font-manrope">
                 сотрудничество возможно как по РФ, так и по миру (документация
@@ -575,6 +679,7 @@ const Drawings = () => {
           />
         </div>
       </div>
+      {isOpen && <Form setIsOpen={setIsOpen} form={form} setForm={setForm} />}
     </div>
   );
 };

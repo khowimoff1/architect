@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import Swiperr from "../assets/components/Swiper";
+import Form from "../assets/components/Form";
 
 const Visualization = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [form, setForm] = useState([]);
   const images = [
     "https://optim.tildacdn.com/tild3734-3764-4138-b366-393661386330/-/resize/600x800/-/format/webp/2714d320888184766f5b.jpg.webp",
     "https://optim.tildacdn.com/tild6632-3431-4334-b238-386632376438/-/resize/600x800/-/format/webp/123fa220888184766f5b.jpg.webp",
@@ -47,9 +50,9 @@ const Visualization = () => {
             <h1 className="text-[22px] text-[#000000] font-medium font-manrope ">
               ЖИЛЫЕ/КОММЕРЧЕСКИЕ ПРОСТРАНСТВА
             </h1>
-            <div className="flex flex-col md:flex-row-reverse md:justify-between md:gap-10 md:pr-10 md:min-h-[488px]">
-              <div className="w-full flex flex-col items-center  md:w-[362px] mt-6 md:relative -top-[55px]">
-                <div className="w-[80%] h-[435px] md:h-[390px] md:w-full">
+            <div className="flex flex-col md:flex-row-reverse md:justify-between md:gap-10 md:pr-10 md:min-h-[488px] ">
+              <div className="w-full flex flex-col items-center  md:w-[362px] mt-6 md:relative -top-[55px] right-0">
+                <div className="w-[90%] h-[435px] md:h-[390px] md:w-full">
                   <Swiperr images={images} classs={classs} />
                 </div>
                 <p className="mt-2 text-sm font-light opacity-70 md:hidden">
@@ -109,20 +112,146 @@ const Visualization = () => {
                         <span className="flex w-[6px] h-[6px] text-transparent bg-black rounded-full">
                           q
                         </span>
-                        <p className="text-[18px] opacity-70 md:text-[13px]">
-                          1 200₽/м2 – сложные стили{" "}
+                        <p className="text-[18px]  md:text-[13px] flex items-center gap-4">
+                          <span className="opacity-70">
+                            1 200₽/м2 – сложные стили
+                          </span>
+                          <span className="relative group">
+                            <IoIosInformationCircleOutline className="text-[34px] md:-right-[50px] right-[40px] cursor-pointer" />
+                            <div className="absolute md:left-1/2 -left-[100px] -translate-x-1/2 top-[120%] bg-white text-black text-[14px] p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[300px] hidden group-hover:block">
+                              Классический, барокко, арт-деко и прочие сложные
+                              стили с большим количеством декоративных
+                              элементов.
+                              <br />
+                              <span className="mt-2">
+                                Объекты площадью от 500м2 рассчитываются
+                                индивидуально (-20-40% от основной стоимости)
+                              </span>
+                            </div>
+                          </span>
                         </p>
-                        <IoIosInformationCircleOutline className="text-[34px] absolute md:-right-[50px] right-[90px]" />
                       </div>
                     </div>
                   </div>
-                  <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:h-[40px] mt-4 md:mt-6 ">
+                  <button
+                    onClick={() => {
+                      setForm({
+                        title: "Жилые пространства",
+                        li: [
+                          "2 круга правок (3 и последующий круг правок от 30% от стоимости помещения)",
+                          "5 PRO моделей на помещение (при наличии определенной PRO модели в нашей библиотеке доплачивать за нее не нужно)",
+                          "4−7 ракурсов/помещение",
+                        ],
+                        srok: "1−5 рабочих дней/помещение (сроки указаны до первых черновых рендеров)",
+                        stmoist: "1 000₽/м2",
+                        stmoist1: "1 200₽/м2 — сложные стили",
+                      });
+                      setIsOpen(true);
+                    }}
+                    className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:h-[40px] mt-4 md:mt-6 "
+                  >
                     ЗАКАЗАТЬ
                   </button>
                 </div>
               </div>
             </div>
           </div>
+          {/* <div className="w-full py-6 mt-6 border-t-2 border-black">
+            <h1 className="text-[22px] text-[#000000] font-medium font-manrope ">
+              КОММЕРЧЕСКИЕ ПРОСТРАНСТВА
+            </h1>
+            <div className="flex flex-col md:flex-row-reverse md:justify-between md:gap-10 md:pr-10 md:min-h-[488px] ">
+              <div className="w-full flex flex-col items-center  md:w-[362px] mt-6 md:relative -top-[55px] right-0">
+                <div className="w-[90%] h-[435px] md:h-[390px] md:w-full">
+                  <Swiperr images={images} classs={classs} />
+                </div>
+                <p className="mt-2 text-sm font-light opacity-70 md:hidden">
+                  Render: Ксения Словак
+                </p>
+              </div>
+              <div className="flex-col justify-between mt-6 md:w-full md:flex">
+                <div>
+                  <h1 className="text-[18px] font-manrope font-semibold md:text-[13px]">
+                    Что входит:
+                  </h1>
+                  <ul className="space-y-1 text-[17px] black pl-3 md:text-[12px]">
+                    <li className="flex items-start gap-2">
+                      <span className="block w-[6px] h-[6px] mt-2 text-transparent bg-black rounded-full">
+                        1
+                      </span>
+                      2 круга правок (3 и последующий круг правок от 30% от
+                      стоимости помещения)
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="block w-[6px] h-[6px] mt-2 text-transparent bg-black rounded-full">
+                        1
+                      </span>
+                      7 PRO моделей на помещение (при наличии определенной PRO
+                      модели в нашей библиотеке доплачивать за нее не нужно)
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="block w-[6px] h-[6px] mt-2 bg-black rounded-full"></span>
+                      4−10 ракурсов/помещение
+                    </li>
+                  </ul>
+                </div>
+                <div className="flex flex-col items-center justify-between pt-6 mt-8 border-t-2 border-gray-300">
+                  <div className="w-full md:flex">
+                    <div className="flex flex-col gap-1 ">
+                      <h1 className="text-[18px] font-manrope font-semibold md:text-[13px]">
+                        Сроки:
+                      </h1>
+                      <p className="text-[18px] opacity-70 md:text-[13px] md:max-w-[253px]">
+                        2−3 рабочих дня/помещение (сроки указаны до первых
+                        черновых рендеров)
+                      </p>
+                    </div>
+                    <div className="flex flex-col gap-1 pt-6 mt-6 border-t-2 border-gray-300 md:mt-0 md:border-t-0 md:border-l-2 md:pt-0 md:pl-5">
+                      <h1 className="text-[18px] font-manrope font-semibold md:text-[13px]">
+                        Стоимость:
+                      </h1>
+                      <div className="flex items-center gap-3 ">
+                        <span className="flex w-[6px] h-[6px] text-transparent bg-black rounded-full">
+                          q
+                        </span>
+                        <p className="text-[18px] md:text-[13px] flex items-center gap-4">
+                          <span className=" opacity-70">1 000₽/м2</span>
+                          <span className="relative group">
+                            <IoIosInformationCircleOutline className="text-[34px] md:-right-[50px] right-[40px] cursor-pointer " />
+                            <div className="absolute md:left-1/2 left-[50px] -translate-x-1/2 top-[120%] bg-white text-black text-[14px] p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[300px] hidden group-hover:block">
+                              Классический, барокко, арт-деко и прочие сложные
+                              стили с большим количеством декоративных
+                              элементов. <br />{" "}
+                              <span className="mt-2">
+                                Объекты площадью от 500м2 рассчитываются
+                                индивидуально (-20-40% от основной стоимости)
+                              </span>
+                            </div>
+                          </span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <button onClick={() => {
+                      setForm({
+                        title: "Жилые пространства",
+                        li: [
+                          "2 круга правок (3 и последующий круг правок от 30% от стоимости помещения)",
+                          "5 PRO моделей на помещение (при наличии определенной PRO модели в нашей библиотеке доплачивать за нее не нужно)",
+                          "4−7 ракурсов/помещение",
+                        ],
+                        srok: "1−5 рабочих дней/помещение (сроки указаны до первых черновых рендеров)",
+                        stmoist: "1 000₽/м2",
+                        stmoist1: "1 200₽/м2 — сложные стили",
+                      });
+                      setIsOpen(true);
+                    }} className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:h-[40px] mt-4 md:mt-6 ">
+                    ЗАКАЗАТЬ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div> */}
         </div>
       </div>
       <div className="flex flex-col px-4 mx-auto mt-20 md:flex-row max-w-7xl md:items-start">
@@ -228,10 +357,10 @@ const Visualization = () => {
             </div>
           </div>
           <div className="flex w-full px-4 py-5 mx-auto items-start bg-[#f1f1f1] gap-4 md:mt-5">
-            <div className="w-[77px] h-[30px] bg-red-900 rounded-full flex text-white items-center justify-center md:w-[25px] md:h-[25px] text-lg md:text-base">
+            <div className="w-[25px] h-[25px] bg-red-900 rounded-full flex text-white items-center justify-center md:w-[25px] md:h-[25px] text-lg md:text-base">
               !
             </div>
-            <h1 className="font-semibold text-[14px] md:text-[14px]">
+            <h1 className="font-semibold text-[14px] md:text-[14px] md:w-auto w-[90%]">
               МЫ НЕ БЕРЕМ В РАБОТУ{" "}
               <span className="font-light font-manrope md:font-sans">
                 Частичные заказы (например, визуализация только одного
@@ -311,9 +440,11 @@ const Visualization = () => {
                   изображения
                 </p>
               </div>
-              <button className="w-full border-2 h-[53px] rounded-[40px] text-[#9e4a45] border-[#9e4a45] font-medium transition-all duration-300 hover:bg-[#9e4a45] hover:text-[#fff] md:h-[40px]">
-                СМОТРЕТЬ ТЗ
-              </button>
+              <a href="https://disk.yandex.ru/d/A-WJB4YWLOr5jw">
+                <button className="w-full border-2 h-[53px] rounded-[40px] text-[#9e4a45] border-[#9e4a45] font-medium transition-all duration-300 hover:bg-[#9e4a45] hover:text-[#fff] md:h-[40px]">
+                  СМОТРЕТЬ ТЗ
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -400,6 +531,7 @@ const Visualization = () => {
           </div>
         </div>
       </div>
+      {isOpen && <Form setIsOpen={setIsOpen} form={form} setForm={setForm} />}
     </div>
   );
 };

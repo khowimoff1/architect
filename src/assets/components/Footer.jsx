@@ -6,15 +6,14 @@ const Footer = () => {
     <div className="w-full px-4 py-10 bg-[#222222]">
       <div className="grid grid-cols-1 mx-auto md:grid-cols-4 md:max-w-7xl">
         <div className="flex flex-col">
-          <NavLink to={"/"} className={"bg-white w-[120px] h-[76px]"}>
+          <NavLink to={"/"} className={"w-[120px] h-[76px]"}>
             <img
-              src="/Images/Place Design Here копия.png"
+              src="/Images/Place Design Here копия (2).png"
               alt="logo"
               className="w-full h-full"
             />
           </NavLink>
           <div className="flex items-center gap-2 mt-5">
-            
             <a href="">
               <svg
                className="t-sociallinks__svg"

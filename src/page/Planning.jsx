@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosInformationCircleOutline } from "react-icons/io";
+import Form from "../assets/components/Form";
 
 const Planning = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [form, setForm] = useState([]);
+
   return (
     <div className="mb-20 md:mb-28">
       <div className="flex flex-col px-4 mx-auto mt-8 max-w-7xl md:flex-row md:justify-between">
@@ -42,12 +46,16 @@ const Planning = () => {
             className="aspect-square md:w-[550px]"
           />
           <div className="flex flex-col gap-2 mt-2 md:flex-row md:w-full">
-            <button className="border rounded-[40px] h-[53px] md:w-full md:h-[45px] transition-all duration-300 text-[#9e4a45] border-[#9e4a45] hover:text-white hover:bg-[#9e4a45] font-semibold">
-              ОБМЕР ПОМЕЩЕНИЙ
-            </button>
-            <button className="border rounded-[40px] h-[53px] md:w-full md:h-[45px] transition-all duration-300 text-[#9e4a45] border-[#9e4a45] hover:text-white hover:bg-[#9e4a45] font-semibold">
-              ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
-            </button>
+            <a href="#omber" className="w-full">
+              <button className="border rounded-[40px] h-[53px] w-full md:h-[45px] transition-all duration-300 text-[#9e4a45] border-[#9e4a45] hover:text-white hover:bg-[#9e4a45] font-semibold">
+                ОБМЕР ПОМЕЩЕНИЙ
+              </button>
+            </a>
+            <a href="#planirovochnie" className="w-full">
+              <button className="border rounded-[40px] h-[53px] w-full md:h-[45px] transition-all duration-300 text-[#9e4a45] border-[#9e4a45] hover:text-white hover:bg-[#9e4a45] font-semibold">
+                ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -55,7 +63,7 @@ const Planning = () => {
         <h1 className="text-sm font-bold font-manrope opacity-20 md:w-[233px] md:text-sm">
           УСЛУГА
         </h1>
-        <div className=" mt-7 md:mt-0">
+        <div id="omber" className=" mt-7 md:mt-0">
           <h1 className="text-[23px] font-medium font-manrope md:font-sans">
             ОБМЕР ПОМЕЩЕНИЙ
           </h1>
@@ -127,11 +135,36 @@ const Planning = () => {
                 </div>
               </div>
               <div className="flex items-center justify-between mt-4 ml-2 md:mt-0 md:border-l border-r-gray-300 md:ml-[42px] md:pl-5 md:w-[255px]">
-                <h1 className="text-[30px] font-normal md:text-[22px]">
+                <h1 className="text-[18px] font-manrope font-normal md:text-[22px]">
                   8 000 р.
                 </h1>
-                <IoIosInformationCircleOutline className="text-[30px] md:text-[22px]" />
-                <button className="border rounded-[40px] h-[53px] w-[186px] md:w-[103px] md:text-sm md:h-[45px] transition-all duration-300 text-[#9e4a45] border-[#9e4a45] hover:text-white hover:bg-[#9e4a45] font-semibold">
+                <span className="relative group">
+                  <IoIosInformationCircleOutline className="text-[30px] md:-right-[50px] right-[40px] cursor-pointer" />
+                  <div className="absolute md:left-1/2 left-[50px] -translate-x-1/2 top-[120%] bg-white text-black text-[14px] p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[300px] hidden group-hover:block">
+                    Классический, барокко, арт-деко и прочие сложные стили с
+                    большим количеством декоративных элементов.
+                    <br />
+                    <span className="mt-2">
+                      Объекты площадью от 500м2 рассчитываются индивидуально
+                      (-20-40% от основной стоимости)
+                    </span>
+                  </div>
+                </span>
+                <button
+                  onClick={() => {
+                    setForm({
+                      title: "ОБМЕР ПОМЕЩЕНИЙ",
+                      li: [
+                        "Поэтажные планы с учетом всех особенностей помещения",
+                        "3д-коробка в ARCHICAD",
+                        "Фото/видео фиксация объекта",
+                      ],
+                      stmoist: "8000 руб",
+                    });
+                    setIsOpen(true);
+                  }}
+                  className="border rounded-[40px] h-[53px] w-[186px] md:w-[103px] md:text-sm md:h-[45px] transition-all duration-300 hover:text-[#9e4a45] border-[#9e4a45] text-white hover:bg-white bg-[#9e4a45] font-semibold"
+                >
                   ЗАКАЗАТЬ
                 </button>
               </div>
@@ -139,7 +172,10 @@ const Planning = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col px-4 mx-auto mt-20 md:flex-row max-w-7xl md:items-start md:justify-start md:mt-20">
+      <div
+        id="planirovochnie"
+        className="flex flex-col px-4 mx-auto mt-20 md:flex-row max-w-7xl md:items-start md:justify-start md:mt-20"
+      >
         <h1 className="text-sm font-bold font-manrope opacity-20 md:w-[233px] md:text-sm">
           УСЛУГА
         </h1>
@@ -154,7 +190,7 @@ const Planning = () => {
           </div>
           <div className="flex flex-col md:w-full">
             <div className="md:flex">
-              <div className="py-5 border-t-2 border-r-2 border-gray-300 md:py-2 md:w-[420px]">
+              <div className="py-5 border-t-2 md:border-r-2 border-gray-300 md:py-2 md:w-[420px]">
                 <h1 className="text-[38px] text-red-800">01</h1>
                 <div className="mt-7">
                   <h1 className="text-[22px] font-medium font-manrope">
@@ -166,7 +202,7 @@ const Planning = () => {
                   </p>
                 </div>
               </div>
-              <div className="py-5 pl-5 border-t-2 border-gray-300">
+              <div className="py-5 border-t-2 border-gray-300 md:pl-5">
                 <h1 className="text-[38px] text-red-800">02</h1>
                 <div className="mt-7">
                   <h1 className="text-[22px] font-medium font-manrope pr-20">
@@ -186,7 +222,7 @@ const Planning = () => {
                   ПРИМЕР ПРОЕКТА
                 </button>
               </div>
-              <div className="py-5 pl-5 border-t-2 border-gray-300 md:w-full">
+              <div className="py-5 border-t-2 border-gray-300 md:pl-5 md:w-full">
                 <h1 className="text-[38px] text-red-800">03</h1>
                 <div className="mt-7">
                   <h1 className="text-[22px] font-medium font-manrope pr-20 md:max-w-[410px]">
@@ -240,7 +276,7 @@ const Planning = () => {
               <div className="flex flex-col items-start justify-between mt-8 border-t-2 border-gray-300">
                 <div className="flex flex-row-reverse justify-start md:flex-col">
                   <div className="flex gap-1 pt-5 pl-5 max-w-[150px] md:max-w-full md:pl-0">
-                    <h1 className="text-[18px] font-manrope font-semibold md:text-[13px]">
+                    <h1 className="text-[13px] font-manrope font-semibold md:text-[13px]">
                       Сроки:
                       <span className="text-[16px] opacity-70 md:text-[13px] md:max-w-[253px] font-normal">
                         14-21 рабочих дней
@@ -248,10 +284,21 @@ const Planning = () => {
                     </h1>
                   </div>
                   <div className="flex flex-col gap-1 pt-5 pr-5 border-r-2 border-gray-300 md:relative md:border-t-2 md:mt-5 md:border-r-0 md:border-l-0 md:pt-5 md:pl-0">
-                    <h1 className="text-[18px] font-manrope font-semibold md:text-[13px]">
+                    <h1 className="text-[15px] font-manrope font-semibold md:text-[13px]">
                       Стоимость:
                     </h1>
-                    <IoIosInformationCircleOutline className="text-[30px] absolute md:left-[80px] md:top-[12px]  right-[64%]" />
+                    <span className="relative group">
+                      <IoIosInformationCircleOutline className="text-[24px] absolute md:right-[30px] right-[50px] cursor-pointer -top-[30px]" />
+                      <div className="absolute md:left-1/2 z-50 left-[160px] -translate-x-1/2 top-[120%] bg-white text-black text-[14px] p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[300px] hidden group-hover:block">
+                        Классический, барокко, арт-деко и прочие сложные стили с
+                        большим количеством декоративных элементов.
+                        <br />
+                        <span className="mt-2">
+                          Объекты площадью от 500м2 рассчитываются индивидуально
+                          (-20-40% от основной стоимости)
+                        </span>
+                      </div>
+                    </span>
                     <div className="flex items-center gap-3">
                       <span className="flex w-[6px] h-[6px] text-transparent bg-black rounded-full">
                         q
@@ -281,7 +328,25 @@ const Planning = () => {
                 <button className="flex md:hidden border border-[#9e4a45] text-[#9e4a45] transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-[#9e4a45] hover:text-white md:h-[40px] mt-4 md:mt-6 ">
                   ПРИМЕР ПРОЕКТА
                 </button>
-                <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-full md:h-[40px] mt-2 md:mt-5 ">
+                <button
+                  onClick={() => {
+                    setForm({
+                      title: "ПЛАНИРОВОЧНОЕ РЕШЕНИЕ",
+                      li: [
+                        "Обмерный план",
+                        "План демонтируемых конструкций",
+                        "План возводимых конструкций",
+                        "План расстановки мебели",
+                      ],
+                      srok: "14-21 рабочих дней",
+                      stmoist: "До 50м2 – 1500р/м2",
+                      stmoist1: "50-100м2 – 1300р/м2",
+                      stmoist2: "От 100м2 – 1100р/м2",
+                    });
+                    setIsOpen(true);
+                  }}
+                  className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-full md:h-[40px] mt-2 md:mt-5 "
+                >
                   ЗАКАЗАТЬ
                 </button>
               </div>
@@ -289,6 +354,7 @@ const Planning = () => {
           </div>
         </div>
       </div>
+      {isOpen && <Form setIsOpen={setIsOpen} form={form} setForm={setForm} />}
     </div>
   );
 };
