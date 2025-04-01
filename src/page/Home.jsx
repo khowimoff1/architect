@@ -183,7 +183,7 @@ const Home = () => {
           <NavLink to={"/visualization"}>
             <div className="flex flex-col">
               <img
-                src="/Images/vv.jpg"
+                src="/Images/vv2.jpg"
                 alt="sf"
                 className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
               />

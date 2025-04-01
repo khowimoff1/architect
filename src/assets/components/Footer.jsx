@@ -14,7 +14,7 @@ const Footer = () => {
             />
           </NavLink>
           <div className="flex items-center gap-2 mt-5">
-            <a href="">
+            <a href="https://t.me/+998332634242">
               <svg
                className="t-sociallinks__svg"
                 role="presentation"
@@ -33,7 +33,7 @@ const Footer = () => {
                 ></path>{" "}
               </svg>
             </a>
-            <a href="">
+            <a href="https://www.instagram.com/samandar_arxitektor?igsh=MWs3b3FzMmpocng1bQ==">
               <svg
                className="t-sociallinks__svg"
                 role="presentation"
@@ -53,9 +53,6 @@ const Footer = () => {
               </svg>
             </a>
           </div>
-          <h1 className="text-[#525252] mt-5 text-xs md:text-[12px] font-light font-manrope md:pr-5">
-            * Instagram — организация, запрещëнная на территории РФ
-          </h1>
           <a
             href=""
             className="text-[#7a7a7a] mt-5 text-xs md:text-[12px] font-light font-manrope"
@@ -127,14 +124,14 @@ const Footer = () => {
             >
               Чек-лист "Проверка чертежей"
             </a>
-            <a
+            {/* <a
               href=""
               className={
                 "text-[#ffffff] text-xs font-light  mt-[10px]"
               }
             >
               ТГ канал
-            </a>
+            </a> */}
             {/* <a
               href=""
               className={

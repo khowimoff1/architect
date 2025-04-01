@@ -105,7 +105,7 @@ const Visualization = () => {
                           q
                         </span>
                         <p className="text-[18px] opacity-70 md:text-[13px]">
-                          1000₽/м2
+                          7$/м2
                         </p>
                       </div>
                       <div className="relative flex items-center gap-3">
@@ -114,7 +114,7 @@ const Visualization = () => {
                         </span>
                         <p className="text-[18px]  md:text-[13px] flex items-center gap-4">
                           <span className="opacity-70">
-                            1 200₽/м2 – сложные стили
+                            8$/м2 – сложные стили
                           </span>
                           <span className="relative group">
                             <IoIosInformationCircleOutline className="text-[34px] md:-right-[50px] right-[40px] cursor-pointer" />
@@ -133,25 +133,11 @@ const Visualization = () => {
                       </div>
                     </div>
                   </div>
-                  <button
-                    onClick={() => {
-                      setForm({
-                        title: "Жилые пространства",
-                        li: [
-                          "2 круга правок (3 и последующий круг правок от 30% от стоимости помещения)",
-                          "5 PRO моделей на помещение (при наличии определенной PRO модели в нашей библиотеке доплачивать за нее не нужно)",
-                          "4−7 ракурсов/помещение",
-                        ],
-                        srok: "1−5 рабочих дней/помещение (сроки указаны до первых черновых рендеров)",
-                        stmoist: "1 000₽/м2",
-                        stmoist1: "1 200₽/м2 — сложные стили",
-                      });
-                      setIsOpen(true);
-                    }}
-                    className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:h-[40px] mt-4 md:mt-6 "
-                  >
-                    ЗАКАЗАТЬ
-                  </button>
+                  <a href="https://t.me/+998332634242" className="w-full">
+                    <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:h-[40px] mt-4 md:mt-6 ">
+                      ЗАКАЗАТЬ
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -454,19 +440,6 @@ const Visualization = () => {
           ДОП. УСЛУГИ
         </h1>
         <div className="mt-10 md:w-full">
-          <div className="items-center justify-between pt-5 border-t-2 md:flex">
-            <div>
-              <h1 className="text-[18px] font-medium font-manrope">
-                МОДЕЛИРОВАНИЕ МЕБЕЛИ{" "}
-              </h1>
-              <p className="text-[13px] font-light font-manrope opacity-60 mt-2">
-                цена указана за 1 объект
-              </p>
-            </div>
-            <div className="flex font-medium text-[22px] font-manrope mt-5 md:w-[130px]">
-              2500-4500 р.
-            </div>
-          </div>
           <div className="items-center justify-between pt-5 mt-5 border-t-2 md:flex">
             <div>
               <h1 className="text-[18px] font-medium font-manrope">
@@ -477,7 +450,7 @@ const Visualization = () => {
               </p>
             </div>
             <div className="flex font-medium text-[22px] font-manrope mt-5 md:w-[130px]">
-              3000 р.
+              20$.
             </div>
           </div>
           <div className="items-center justify-between pt-5 mt-5 border-t-2 md:flex">
@@ -491,7 +464,7 @@ const Visualization = () => {
               </p>
             </div>
             <div className="flex font-medium text-[22px] font-manrope mt-5 md:w-[130px]">
-              3000 р.
+              20$.
             </div>
           </div>
           <div className="items-center justify-between pt-5 mt-5 border-t-2 md:flex">
@@ -500,21 +473,10 @@ const Visualization = () => {
                 ПРАВКИ ПОСЛЕ УТВЕРЖДЕНИЯ ФИНАЛЬНЫХ РЕНДЕРОВ
               </h1>
               <p className="text-[13px] font-light font-manrope opacity-60 mt-2">
-                60% от стоимости помещения
+                50% от стоимости помещения
               </p>
             </div>
             <div className="flex font-medium text-[22px] font-manrope mt-5  md:w-[130px]"></div>
-          </div>
-          <div className="items-center justify-between pt-5 mt-5 border-t-2 md:flex">
-            <div>
-              <h1 className="text-[18px] font-medium font-manrope">3D-ТУР</h1>
-              <p className="text-[13px] font-light font-manrope opacity-60 mt-2">
-                цена указана за 1 секунду (30 кадров/сек)
-              </p>
-            </div>
-            <div className="flex font-medium text-[22px] font-manrope mt-5 md:w-[130px]">
-              3500 р.
-            </div>
           </div>
           <div className="items-center justify-between pt-5 pb-5 mt-5 border-t-2 border-b-2 md:flex">
             <div>
@@ -526,7 +488,7 @@ const Visualization = () => {
               </p>
             </div>
             <div className="flex font-medium text-[22px] font-manrope mt-5 md:w-[130px]">
-              2000 р.
+              20$.
             </div>
           </div>
         </div>

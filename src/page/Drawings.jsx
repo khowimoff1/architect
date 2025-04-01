@@ -336,26 +336,28 @@ const Drawings = () => {
                       <p className="text-[15px] opacity-70">4$/м2</p>
                     </div>
                   </div>
-                  <button
-                    onClick={() => {
-                      setForm({
-                        title: "ТАРИФ МИНИМАЛЬНЫЙ",
-                        li: [
-                          "Чертежи",
-                          "⁠Необходимые для реализации узлы 2Д/3Д",
-                          "3Д-виды",
-                          "Спецификации",
-                          "2 круга бесплатных правок",
-                        ],
-                        srok: "100м2 ~ 14-20 дней",
-                        stmoist: " 4$/м2",
-                      });
-                      setIsOpen(true);
-                    }}
-                    className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[35%] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square"
-                  >
-                    ЗАКАЗАТЬ
-                  </button>
+                  <a href="https://t.me/+998332634242" className="w-[32%] md:w-auto">
+                    <button
+                      // onClick={() => {
+                      //   setForm({
+                      //     title: "ТАРИФ МИНИМАЛЬНЫЙ",
+                      //     li: [
+                      //       "Чертежи",
+                      //       "⁠Необходимые для реализации узлы 2Д/3Д",
+                      //       "3Д-виды",
+                      //       "Спецификации",
+                      //       "2 круга бесплатных правок",
+                      //     ],
+                      //     srok: "100м2 ~ 14-20 дней",
+                      //     stmoist: " 4$/м2",
+                      //   });
+                      //   setIsOpen(true);
+                      // }}
+                      className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square"
+                    >
+                      ЗАКАЗАТЬ
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -437,27 +439,11 @@ const Drawings = () => {
                       <p className="text-[15px] opacity-70">6$/м2</p>
                     </div>
                   </div>
-                  <button
-                    onClick={() => {
-                      setForm({
-                        title: "ТАРИФ СТАНДАРТ",
-                        li: [
-                          "Чертежи",
-                          "⁠Необходимые для реализации узлы 2Д",
-                          "Развертки по всем помещениям",
-                          "Спецификации",
-                          "Чертежи мебели индивидуального изготовления 2д",
-                          "2 круга бесплатных правок",
-                        ],
-                        srok: "100м2 ~ 14-20 дней",
-                        stmoist: " 6$/м2",
-                      });
-                      setIsOpen(true);
-                    }}
-                    className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[35%] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square"
-                  >
-                    ЗАКАЗАТЬ
-                  </button>
+                  <a href="https://t.me/+998332634242" className="w-[32%] md:w-auto">
+                    <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square">
+                      ЗАКАЗАТЬ
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -550,28 +536,11 @@ const Drawings = () => {
                       <p className="text-[15px] opacity-70">8$/м2</p>
                     </div>
                   </div>
-                  <button
-                    onClick={() => {
-                      setForm({
-                        title: "ТАРИФ ПРЕМИУМ",
-                        li: [
-                          "Чертежи",
-                          "⁠Необходимые для реализации узлы 2Д",
-                          "3д-виды",
-                          "Развертки по всем помещениям",
-                          "Спецификации",
-                          "Чертежи мебели индивидуального изготовления 2д",
-                          "2 круга бесплатных правок",
-                        ],
-                        srok: "100м2 ~ 18-20 дней",
-                        stmoist: " 8$/м2",
-                      });
-                      setIsOpen(true);
-                    }}
-                    className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[35%] aspect-square rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]"
-                  >
-                    ЗАКАЗАТЬ
-                  </button>
+                  <a href="https://t.me/+998332634242" className="w-[32%] md:w-auto">
+                    <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full aspect-square rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
+                      ЗАКАЗАТЬ
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

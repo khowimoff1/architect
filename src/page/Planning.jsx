@@ -122,7 +122,7 @@ const Planning = () => {
                     Локация:{" "}
                   </h1>
                   <p className="font-light text-[17px] md:text-[13px]">
-                    Москва и ближайшее Подмосковье
+                    Ташкент
                   </p>
                 </div>
                 <div className="flex gap-5 mt-4 md:mt-0">
@@ -136,7 +136,7 @@ const Planning = () => {
               </div>
               <div className="flex items-center justify-between mt-4 ml-2 md:mt-0 md:border-l border-r-gray-300 md:ml-[42px] md:pl-5 md:w-[255px]">
                 <h1 className="text-[18px] font-manrope font-normal md:text-[22px]">
-                  8 000 р.
+                  100 $.
                 </h1>
                 <span className="relative group">
                   <IoIosInformationCircleOutline className="text-[30px] md:-right-[50px] right-[40px] cursor-pointer" />
@@ -150,23 +150,11 @@ const Planning = () => {
                     </span>
                   </div>
                 </span>
-                <button
-                  onClick={() => {
-                    setForm({
-                      title: "ОБМЕР ПОМЕЩЕНИЙ",
-                      li: [
-                        "Поэтажные планы с учетом всех особенностей помещения",
-                        "3д-коробка в ARCHICAD",
-                        "Фото/видео фиксация объекта",
-                      ],
-                      stmoist: "8000 руб",
-                    });
-                    setIsOpen(true);
-                  }}
-                  className="border rounded-[40px] h-[53px] w-[186px] md:w-[103px] md:text-sm md:h-[45px] transition-all duration-300 hover:text-[#9e4a45] border-[#9e4a45] text-white hover:bg-white bg-[#9e4a45] font-semibold"
-                >
-                  ЗАКАЗАТЬ
-                </button>
+                <a href="https://t.me/+998332634242">
+                  <button className="border rounded-[40px] h-[53px] w-[186px] md:w-[103px] md:text-sm md:h-[45px] transition-all duration-300 hover:text-[#9e4a45] border-[#9e4a45] text-white hover:bg-white bg-[#9e4a45] font-semibold">
+                    ЗАКАЗАТЬ
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -304,7 +292,7 @@ const Planning = () => {
                         q
                       </span>
                       <p className="text-[16px] opacity-70 md:text-[13px]">
-                        До 50м2 – 1500р/м2
+                        До 50м2 – 3$/м2
                       </p>
                     </div>
                     <div className="flex items-center gap-3">
@@ -312,7 +300,7 @@ const Planning = () => {
                         q
                       </span>
                       <p className="text-[16px] opacity-70 md:text-[13px]">
-                        50-100м2 – 1300р/м2
+                        50-100м2 – 2$/м2
                       </p>
                     </div>
                     <div className="relative flex items-center gap-3">
@@ -320,7 +308,7 @@ const Planning = () => {
                         q
                       </span>
                       <p className="text-[16px] opacity-70 md:text-[13px]">
-                        От 100м2 – 1100р/м2
+                        От 100м2 – 1$/м2
                       </p>
                     </div>
                   </div>
@@ -328,27 +316,11 @@ const Planning = () => {
                 <button className="flex md:hidden border border-[#9e4a45] text-[#9e4a45] transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-[#9e4a45] hover:text-white md:h-[40px] mt-4 md:mt-6 ">
                   ПРИМЕР ПРОЕКТА
                 </button>
-                <button
-                  onClick={() => {
-                    setForm({
-                      title: "ПЛАНИРОВОЧНОЕ РЕШЕНИЕ",
-                      li: [
-                        "Обмерный план",
-                        "План демонтируемых конструкций",
-                        "План возводимых конструкций",
-                        "План расстановки мебели",
-                      ],
-                      srok: "14-21 рабочих дней",
-                      stmoist: "До 50м2 – 1500р/м2",
-                      stmoist1: "50-100м2 – 1300р/м2",
-                      stmoist2: "От 100м2 – 1100р/м2",
-                    });
-                    setIsOpen(true);
-                  }}
-                  className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-full md:h-[40px] mt-2 md:mt-5 "
-                >
+                <a href="https://t.me/+998332634242" className="w-full">
+                <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-full md:h-[40px] mt-2 md:mt-5 ">
                   ЗАКАЗАТЬ
                 </button>
+                </a>
               </div>
             </div>
           </div>
