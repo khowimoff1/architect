@@ -96,7 +96,7 @@ const Drawings = () => {
                 Мы заключаем договор (с ИП со стороны CherES.Buro), где
                 прописаны обязательства сторон. Вы получаете чек об оплате
               </p>
-              <a href="https://disk.yandex.ru/d/UbGbwOOw9njnEw">
+              <a href="/договор диз инт.pdf" target="_blank">
                 <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[230px] h-[53px] hover:bg-white hover:text-[#9e4a45] mt-5">
                   СМОТРЕТЬ ДОГОВОР
                 </button>
@@ -248,7 +248,7 @@ const Drawings = () => {
                   </p>
                 </div>
               </div>
-              <a href="https://disk.yandex.ru/d/A-WJB4YWLOr5jw">
+              <a href="/Бриф опросник.pdf" target="_blank">
                 <button className="absolute md:static -bottom-[110px] right-[30px] flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[157px] h-[157px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
                   СМОТРЕТЬ ТЗ
                 </button>

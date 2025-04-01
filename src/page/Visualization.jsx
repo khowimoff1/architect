@@ -426,7 +426,7 @@ const Visualization = () => {
                   изображения
                 </p>
               </div>
-              <a href="https://disk.yandex.ru/d/A-WJB4YWLOr5jw">
+              <a href="/Бриф опросник.pdf" target="_blank">
                 <button className="w-full border-2 h-[53px] rounded-[40px] text-[#9e4a45] border-[#9e4a45] font-medium transition-all duration-300 hover:bg-[#9e4a45] hover:text-[#fff] md:h-[40px]">
                   СМОТРЕТЬ ТЗ
                 </button>
