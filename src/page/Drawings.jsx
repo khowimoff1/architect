@@ -336,7 +336,7 @@ const Drawings = () => {
                       <p className="text-[15px] opacity-70">4$/м2</p>
                     </div>
                   </div>
-                  <a href="https://t.me/+998332634242" className="w-[32%] md:w-auto">
+                  <a href="https://t.me/+998332634242" className="w-[28%] md:w-auto">
                     <button
                       // onClick={() => {
                       //   setForm({
@@ -439,7 +439,7 @@ const Drawings = () => {
                       <p className="text-[15px] opacity-70">6$/м2</p>
                     </div>
                   </div>
-                  <a href="https://t.me/+998332634242" className="w-[32%] md:w-auto">
+                  <a href="https://t.me/+998332634242" className="w-[28%] md:w-auto">
                     <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square">
                       ЗАКАЗАТЬ
                     </button>
@@ -536,7 +536,7 @@ const Drawings = () => {
                       <p className="text-[15px] opacity-70">8$/м2</p>
                     </div>
                   </div>
-                  <a href="https://t.me/+998332634242" className="w-[32%] md:w-auto">
+                  <a href="https://t.me/+998332634242" className="w-[28%] md:w-auto">
                     <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full aspect-square rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
                       ЗАКАЗАТЬ
                     </button>
@@ -544,18 +544,6 @@ const Drawings = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="flex w-full px-4 py-5 mx-auto items-start bg-[#f1f1f1] gap-4">
-            <div className="w-[25px] h-[25px] bg-red-900 rounded-full flex text-white items-center justify-center md:w-[30px] md:h-[30px]">
-              <span className="text-xs">!</span>
-            </div>
-            <h1 className="font-semibold text-[18px] w-[90%] md:w-auto">
-              ВАЖНО:{" "}
-              <span className="font-light font-manrope">
-                сотрудничество возможно как по РФ, так и по миру (документация
-                на русском языке).
-              </span>
-            </h1>
           </div>
         </div>
       </div>

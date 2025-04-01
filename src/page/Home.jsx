@@ -56,7 +56,7 @@ const Home = () => {
         </h1>
         <div className="mt-10 md:mt-0">
           <div className="flex flex-col items-center md:flex-row md:items-start">
-            <div className="flex items-center justify-center md:items-start">
+            <div className="flex items-start justify-center md:items-start">
               <div className="flex flex-col px-6 md:px-0 md:pr-6">
                 <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
                   4+
@@ -82,8 +82,8 @@ const Home = () => {
                 дизайнеров реализовали <br /> проекты с нами
               </h1>
             </div>
-            <div className="flex items-center justify-center md:items-start">
-              <div className="flex flex-col px-6 pr-16 border-gray-400 md:border-l-2 md:ml-5 md:pr-5">
+            <div className="flex items-start justify-center md:items-start">
+              <div className="flex flex-col px-6 pr-12 border-gray-400 md:border-l-2 md:ml-5 md:pr-5">
                 <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
                   6
                 </h1>
@@ -95,8 +95,8 @@ const Home = () => {
                 <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
                   11
                 </h1>
-                <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope w-[146px] md:w-[190px] ">
-                  реализованных объектов за пределами РФ
+                <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope w-[115px] md:w-[190px] ">
+                  реализованных объектов за пределами
                 </h1>
               </div>
             </div>
@@ -155,15 +155,15 @@ const Home = () => {
         <h1 className="text-xs font-bold font-manrope opacity-20 md:w-[190px] md:text-sm">
           УСЛУГИ
         </h1>
-        <div className="grid grid-cols-1 gap-10 mt-5 md:grid-cols-2 md:gap-5">
+        <div className="grid grid-cols-2 gap-10 mt-5 md:grid-cols-2 md:gap-5">
           <NavLink to={"/drawings"}>
             <div className="flex flex-col">
               <img
                 src="https://optim.tildacdn.com/tild3232-3462-4364-b761-303064343464/-/cover/888x582/center/center/-/format/webp/WhatsApp_Image_2023-.jpeg.webp"
                 alt="sf"
-                className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
+                className="md:h-[291px] md:w-[444px] w-full aspect-square"
               />
-              <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+              <h1 className="text-[14px] font-manrope font-medium mt-2 md:text-[22px]">
                 ЧЕРТЕЖИ
               </h1>
             </div>
@@ -173,9 +173,9 @@ const Home = () => {
               <img
                 src="/Images/abort.png"
                 alt="sf"
-                className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
+                className="md:h-[291px] md:w-[444px] w-full aspect-square"
               />
-              <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+              <h1 className="text-[14px] font-manrope font-medium mt-2 md:text-[22px]">
                 ЭСКИЗНЫЙ ПРОЕКТ
               </h1>
             </div>
@@ -185,9 +185,9 @@ const Home = () => {
               <img
                 src="/Images/vv2.jpg"
                 alt="sf"
-                className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
+                className="md:h-[291px] md:w-[444px] w-full aspect-square"
               />
-              <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+              <h1 className="text-[14px] font-manrope font-medium mt-2 md:text-[22px]">
                 ВИЗУАЛИЗАЦИЯ
               </h1>
             </div>
@@ -197,9 +197,9 @@ const Home = () => {
               <img
                 src="Images/d.png"
                 alt="sf"
-                className="md:h-[291px] md:w-[444px] w-[403px] h-[260px]"
+                className="md:h-[291px] md:w-[444px] w-full aspect-square"
               />
-              <h1 className="text-[18px] font-manrope font-medium mt-2 md:text-[22px]">
+              <h1 className="text-[14px] font-manrope font-medium mt-2 md:text-[22px]">
                 ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
               </h1>
             </div>
