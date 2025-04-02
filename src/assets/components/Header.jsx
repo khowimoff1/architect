@@ -17,7 +17,7 @@ const Header = () => {
             className="h-full"
           />
         </NavLink>
-        <ul className="hidden gap-5 md:flex">
+        <ul className="hidden gap-5 md:flex text-[#005F7F]">
           <li>
             <NavLink
               to={"/"}
@@ -73,7 +73,7 @@ const Header = () => {
                   onClick={() => setMenu(false)}
                 />
               </div>
-              <ul className="flex flex-col gap-[15px] pr-5 text-lg text-gray-900 nav">
+              <ul className="flex flex-col gap-[15px] pr-5 text-lg text-[#005F7F] nav">
                 <li
                   onClick={() => setMenu(false)}
                   className="text-sm font-light font-manrope"

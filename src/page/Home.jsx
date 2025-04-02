@@ -58,7 +58,7 @@ const Home = () => {
           <div className="flex flex-col items-center md:flex-row md:items-start">
             <div className="flex items-start justify-center md:items-start">
               <div className="flex flex-col px-6 md:px-0 md:pr-6">
-                <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
+                <h1 className="text-[40px] text-[#005F7F] font-manrope font-normal">
                   4+
                 </h1>
                 <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope md:w-[120px] ">
@@ -66,7 +66,7 @@ const Home = () => {
                 </h1>
               </div>
               <div className="flex flex-col px-6 border-l-2 border-gray-400">
-                <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
+                <h1 className="text-[40px] text-[#005F7F] font-manrope font-normal">
                   6000+
                 </h1>
                 <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope md:w-[140px] ">
@@ -75,7 +75,7 @@ const Home = () => {
               </div>
             </div>
             <div className="flex flex-col items-center my-8 border-gray-400 md:my-0 md:border-l-2 md:pl-5 md:items-start ">
-              <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
+              <h1 className="text-[40px] text-[#005F7F] font-manrope font-normal">
                 45+
               </h1>
               <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope text-center md:text-start ">
@@ -84,7 +84,7 @@ const Home = () => {
             </div>
             <div className="flex items-start justify-center md:items-start">
               <div className="flex flex-col px-6 pr-12 border-gray-400 md:border-l-2 md:ml-5 md:pr-5">
-                <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
+                <h1 className="text-[40px] text-[#005F7F] font-manrope font-normal">
                   6
                 </h1>
                 <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope md:w-[90px] ">
@@ -92,7 +92,7 @@ const Home = () => {
                 </h1>
               </div>
               <div className="flex flex-col px-6 border-l-2 border-gray-400">
-                <h1 className="text-[40px] text-[#9a3c35] font-manrope font-normal">
+                <h1 className="text-[40px] text-[#005F7F] font-manrope font-normal">
                   11
                 </h1>
                 <h1 className="text-[17px] md:text-[15px] opacity-70 font-light font-manrope w-[115px] md:w-[190px] ">
