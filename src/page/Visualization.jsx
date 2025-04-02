@@ -134,7 +134,7 @@ const Visualization = () => {
                     </div>
                   </div>
                   <a href="https://t.me/+998332634242" className="w-full">
-                    <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:h-[40px] mt-4 md:mt-6 ">
+                    <button className="flex bg-[#005F7F] border border-[#005F7F] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#005F7F] md:h-[40px] mt-4 md:mt-6 ">
                       ЗАКАЗАТЬ
                     </button>
                   </a>
@@ -246,7 +246,7 @@ const Visualization = () => {
         </h1>
         <div className="md:w-full">
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-0">
-            <h1 className="text-[42px] font-normal  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-normal  text-[#005F7F]   font-manrope">
               01
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -260,7 +260,7 @@ const Visualization = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]   font-manrope">
               02
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -274,7 +274,7 @@ const Visualization = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]   font-manrope">
               03
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -288,7 +288,7 @@ const Visualization = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]   font-manrope">
               04
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -302,7 +302,7 @@ const Visualization = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]   font-manrope">
               05
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -315,7 +315,7 @@ const Visualization = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]   font-manrope">
               06
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -329,7 +329,7 @@ const Visualization = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]   font-manrope">
               07
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -343,7 +343,7 @@ const Visualization = () => {
             </div>
           </div>
           <div className="flex w-full px-4 py-5 mx-auto items-start bg-[#f1f1f1] gap-4 md:mt-5">
-            <div className="w-[25px] h-[25px] bg-red-900 rounded-full flex text-white items-center justify-center md:w-[25px] md:h-[25px] text-lg md:text-base">
+            <div className="w-[25px] h-[25px] bg-[#005F7F] rounded-full flex text-white items-center justify-center md:w-[25px] md:h-[25px] text-lg md:text-base">
               !
             </div>
             <h1 className="font-semibold text-[14px] md:text-[14px] md:w-auto w-[90%]">
@@ -371,32 +371,32 @@ const Visualization = () => {
             </div>
             <div className="mt-5 space-y-4 md:mt-0 md:flex flex-col justify-between md:w-[61%]">
               <div className="flex justify-start gap-2">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full md:mt-1"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F]   rounded-full md:mt-1"></span>
                 <p className="text-[18px] w-full leading-2 pl-1 opacity-70 md:text-[14px]">
                   Фото/видео объекта (вид из окна)
                 </p>
               </div>
               <div className="flex justify-start gap-2">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full md:mt-1"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F]   rounded-full md:mt-1"></span>
                 <p className="text-[18px] w-full leading-2 pl-1 opacity-70 md:text-[14px]">
                   Обмерный план со всеми размерами, отметками высот. Формат
                   PDF/DWG/PLN
                 </p>
               </div>
               <div className="flex justify-start gap-2">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full md:mt-1"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F]   rounded-full md:mt-1"></span>
                 <p className="text-[18px] w-full leading-2 pl-1 opacity-70 md:text-[14px]">
                   Планировочное решение. Формат PDF/DWG/PLN
                 </p>
               </div>
               <div className="flex justify-start gap-2">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full md:mt-1"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F]   rounded-full md:mt-1"></span>
                 <p className="text-[18px] w-full leading-2 pl-1 opacity-70 md:text-[14px]">
                   3Д-модель BIM/ SketchUp (при наличии)
                 </p>
               </div>
               <div className="flex justify-start gap-2">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full md:mt-1"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F]   rounded-full md:mt-1"></span>
                 <p className="text-[18px] w-full leading-2 pl-1 opacity-70 md:text-[14px]">
                   Чертежи: электрика, раскладка напольных покрытий, опуски
                   потолков, карнизов и прочая информация (в любом удобном
@@ -404,14 +404,14 @@ const Visualization = () => {
                 </p>
               </div>
               <div className="flex justify-start gap-2">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full md:mt-1"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F]   rounded-full md:mt-1"></span>
                 <p className="text-[18px] w-full leading-2 pl-1 opacity-70 md:text-[14px]">
                   Чертежи мебели на заказ с размерами (для правильного
                   моделирования)
                 </p>
               </div>
               <div className="flex justify-start gap-2">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full md:mt-1"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F]   rounded-full md:mt-1"></span>
                 <p className="text-[18px] w-full leading-2 pl-1 opacity-70 md:text-[14px]">
                   Коллажи/развертки/референсы с описанием материалов,
                   используемых дизайнерских приемов, моделей мебели, освещения и
@@ -419,7 +419,7 @@ const Visualization = () => {
                 </p>
               </div>
               <div className="flex justify-start gap-2">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full md:mt-1"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F]   rounded-full md:mt-1"></span>
                 <p className="text-[18px] w-full leading-2 pl-1 opacity-70 md:text-[14px]">
                   Указание желаемых ракурсов, ориентации кадров (горизонтальные,
                   вертикальные, квадратные), описание требования для финального
@@ -427,7 +427,7 @@ const Visualization = () => {
                 </p>
               </div>
               <a href="/Бриф опросник.pdf" target="_blank">
-                <button className="w-full border-2 h-[53px] rounded-[40px] text-[#9e4a45] border-[#9e4a45] font-medium transition-all duration-300 hover:bg-[#9e4a45] hover:text-[#fff] md:h-[40px]">
+                <button className="w-full border-2 h-[53px] rounded-[40px] text-[#005F7F] border-[#005F7F] font-medium transition-all duration-300 hover:bg-[#005F7F] hover:text-[#fff] md:h-[40px]">
                   СМОТРЕТЬ ТЗ
                 </button>
               </a>

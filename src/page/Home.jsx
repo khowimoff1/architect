@@ -17,7 +17,7 @@ const Home = () => {
               разработка рабочей документации и визуализаций к дизайн-проектам
             </p>
             <a href="#uslugi">
-              <button className="w-[145px] transition-all duration-500 h-12 font-xs text-white font-manrope font-medium bg-[#9e4a45] rounded-[60px] mt-5 md:w-[180px] md:h-14 hover:bg-white hover:border hover:border-[#9e4a45] hover:text-[#9e4a45]">
+              <button className="w-[145px] transition-all duration-500 h-12 font-xs text-white font-manrope font-medium bg-[#005F7F] rounded-[60px] mt-5 md:w-[180px] md:h-14 hover:bg-white hover:border hover:border-[#005F7F] hover:text-[#005F7F]">
                 УСЛУГИ
               </button>
             </a>
@@ -104,7 +104,7 @@ const Home = () => {
           <div className="flex flex-col gap-4 text-[17px] md:text-[15px] font-light opacity-70 font-manrope mt-5 md:flex-row md:w-full md:mt-10 md:gap-0">
             <div>
               <div className="flex items-start justify-between gap-3 md:justify-start">
-                <span className="w-3 h-3 mt-1 border border-red-500 rounded-full"></span>
+                <span className="w-3 h-3 mt-1 border border-[#005F7F] rounded-full"></span>
                 <p className="w-[95%] pl-1 md:w-[90%]">
                   Над каждым проектом трудится практикующий дизайнер-архитектор,
                   соблюдающий строительные нормы, а главное — возможность
@@ -116,7 +116,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex items-start justify-between gap-3 mt-5 md:justify-start">
-                <span className="w-3 h-3 mt-1 border border-red-500 rounded-full"></span>
+                <span className="w-3 h-3 mt-1 border border-[#005F7F] rounded-full"></span>
                 <p className="w-[95%] pl-1 md:w-[90%]">
                   Работа в BIM создается 3D-модель помещения, за счет чего сразу
                   же наглядно можно проверить все открывания, примыкания и т. д.
@@ -124,7 +124,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="flex items-start justify-between gap-3 mt-5 md:justify-start">
-                <span className="w-3 h-3 mt-1 border border-red-500 rounded-full"></span>
+                <span className="w-3 h-3 mt-1 border border-[#005F7F] rounded-full"></span>
                 <p className="w-[95%] pl-1 md:w-[90%] pr-10">
                   Перед сдачей на стройку альбом проходит 2 круга проверок
                 </p>
@@ -132,13 +132,13 @@ const Home = () => {
             </div>
             <div className="flex-col md:flex md:w-full">
               <div className="flex items-start justify-between gap-3 mt-5 md:mt-0 md:justify-start">
-                <span className="w-3 h-3 mt-1 border border-red-500 rounded-full"></span>
+                <span className="w-3 h-3 mt-1 border border-[#005F7F] rounded-full"></span>
                 <p className="w-[95%] pl-1 md:w-[90%]">
                   Большой опыт работы. Образование в сфере дизайна и архитектуры
                 </p>
               </div>
               <div className="flex items-start justify-between gap-3 mt-5 md:justify-start">
-                <span className="w-3 h-3 mt-1 border border-red-500 rounded-full"></span>
+                <span className="w-3 h-3 mt-1 border border-[#005F7F] rounded-full"></span>
                 <p className="w-[95%] pl-1 md:w-[90%]">
                   Закрытые и реализованные проекты как жилых, так и коммерческих
                   помещений

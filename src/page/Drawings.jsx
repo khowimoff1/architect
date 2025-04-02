@@ -31,12 +31,12 @@ const Drawings = () => {
             </p>
             <div className="flex flex-row-reverse items-center justify-between gap-2 md:justify-start md:flex-row md:gap-3">
               <a href="#tarify" className="w-[90%] md:w-[167px]">
-                <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-full h-[53px] hover:bg-white hover:text-[#9e4a45]">
+                <button className="text-[16px] transition-all duration-500 text-white bg-[#005F7F] border border-[#005F7F] font-semibold rounded-[30px] w-full h-[53px] hover:bg-white hover:text-[#005F7F]">
                   ТАРИФЫ
                 </button>
               </a>
               <a href="#protfolio" className="w-full md:w-[217px]">
-                <button className="text-[16px] transition-all duration-500 text-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-full h-[53px] hover:bg-[#9e4a45] hover:text-white">
+                <button className="text-[16px] transition-all duration-500 text-[#005F7F] border border-[#005F7F] font-semibold rounded-[30px] w-full h-[53px] hover:bg-[#005F7F] hover:text-white">
                   ПОРТФОЛИО
                 </button>
               </a>
@@ -97,7 +97,7 @@ const Drawings = () => {
                 прописаны обязательства сторон. Вы получаете чек об оплате
               </p>
               <a href="/договор диз инт.pdf" target="_blank">
-                <button className="text-[16px] transition-all duration-500 text-white bg-[#9e4a45] border border-[#9e4a45] font-semibold rounded-[30px] w-[230px] h-[53px] hover:bg-white hover:text-[#9e4a45] mt-5">
+                <button className="text-[16px] transition-all duration-500 text-white bg-[#005F7F] border border-[#005F7F] font-semibold rounded-[30px] w-[230px] h-[53px] hover:bg-white hover:text-[#005F7F] mt-5">
                   СМОТРЕТЬ ДОГОВОР
                 </button>
               </a>
@@ -119,7 +119,7 @@ const Drawings = () => {
         </h1>
         <div className="md:w-full">
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-0">
-            <h1 className="text-[42px] font-normal  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-normal  text-[#005F7F]  font-manrope">
               01
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -133,7 +133,7 @@ const Drawings = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]  font-manrope">
               02
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -146,7 +146,7 @@ const Drawings = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]  font-manrope">
               03
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -159,7 +159,7 @@ const Drawings = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]  font-manrope">
               04
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -172,7 +172,7 @@ const Drawings = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]  font-manrope">
               05
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -185,7 +185,7 @@ const Drawings = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]  font-manrope">
               06
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -198,7 +198,7 @@ const Drawings = () => {
             </div>
           </div>
           <div className="flex items-start gap-10 pt-2 mt-8 border-t-2 border-black md:pt-1 md:mt-2">
-            <h1 className="text-[42px] font-light  text-[#9a3c35] font-manrope">
+            <h1 className="text-[42px] font-light  text-[#005F7F]  font-manrope">
               07
             </h1>
             <div className="flex flex-col items-start justify-between mt-3 md:flex-row md:items-start md:w-full">
@@ -221,13 +221,13 @@ const Drawings = () => {
           <div className="relative flex mt-5 md:justify-between md:w-full md:mt-0">
             <div className="md:ml-[100px] md:pt-5">
               <div className="flex items-center justify-between gap-2 md:justify-start">
-                <span className="w-3 h-3 mt-1 border border-red-500 rounded-full"></span>
+                <span className="w-3 h-3 mt-1 border border-[#005F7F] rounded-full"></span>
                 <p className="text-[18px] w-[200px]  pl-1 md:w-[90%] opacity-70 md:text-[16px]">
                   Обмерный план
                 </p>
               </div>
               <div className="flex items-start justify-between gap-2 mt-5 md:justify-start">
-                <span className="w-3 h-3 mt-2 border border-red-500 rounded-full"></span>
+                <span className="w-3 h-3 mt-2 border border-[#005F7F] rounded-full"></span>
                 <p className="text-[18px]  w-[200px] pl-1 md:w-auto opacity-70 md:text-[16px]">
                   Согласованное планировочное решение{" "}
                 </p>
@@ -236,20 +236,20 @@ const Drawings = () => {
             <div className="flex md:gap-[98px]">
               <div className="md:pt-5">
                 <div className="flex items-center justify-between gap-2 md:justify-start">
-                  <span className="w-3 h-3 mt-1 border border-red-500 rounded-full"></span>
+                  <span className="w-3 h-3 mt-1 border border-[#005F7F] rounded-full"></span>
                   <p className="text-[18px]  pl-1 md:w-[90%] opacity-70 md:text-[16px]">
                     Визуализации
                   </p>
                 </div>
                 <div className="flex items-start gap-2 mt-5 md:justify-start">
-                  <span className="w-3 h-3 mt-2 border border-red-500 rounded-full"></span>
+                  <span className="w-3 h-3 mt-2 border border-[#005F7F] rounded-full"></span>
                   <p className="text-[18px]  pl-1 md:w-[90%] opacity-70 md:text-[16px]">
                     ТЗ
                   </p>
                 </div>
               </div>
               <a href="/Бриф опросник.pdf" target="_blank">
-                <button className="absolute md:static -bottom-[110px] right-[30px] flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-[157px] h-[157px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
+                <button className="absolute md:static -bottom-[110px] right-[30px] flex bg-[#005F7F] border border-[#005F7F] text-white transition-all duration-300 w-[157px] h-[157px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#005F7F] md:w-[130px] md:h-[130px]">
                   СМОТРЕТЬ ТЗ
                 </button>
               </a>
@@ -353,7 +353,7 @@ const Drawings = () => {
                       //   });
                       //   setIsOpen(true);
                       // }}
-                      className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square"
+                      className="flex bg-[#005F7F] border border-[#005F7F] text-white transition-all duration-300 w-full rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#005F7F] md:w-[130px] md:h-[130px] aspect-square"
                     >
                       ЗАКАЗАТЬ
                     </button>
@@ -440,7 +440,7 @@ const Drawings = () => {
                     </div>
                   </div>
                   <a href="https://t.me/+998332634242" className="w-[28%] md:w-auto">
-                    <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px] aspect-square">
+                    <button className="flex bg-[#005F7F] border border-[#005F7F] text-white transition-all duration-300 w-full rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#005F7F] md:w-[130px] md:h-[130px] aspect-square">
                       ЗАКАЗАТЬ
                     </button>
                   </a>
@@ -537,7 +537,7 @@ const Drawings = () => {
                     </div>
                   </div>
                   <a href="https://t.me/+998332634242" className="w-[28%] md:w-auto">
-                    <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full aspect-square rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-[130px] md:h-[130px]">
+                    <button className="flex bg-[#005F7F] border border-[#005F7F] text-white transition-all duration-300 w-full aspect-square rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#005F7F] md:w-[130px] md:h-[130px]">
                       ЗАКАЗАТЬ
                     </button>
                   </a>

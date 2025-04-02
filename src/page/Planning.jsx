@@ -47,12 +47,12 @@ const Planning = () => {
           />
           <div className="flex flex-col gap-2 mt-2 md:flex-row md:w-full">
             <a href="#omber" className="w-full">
-              <button className="border rounded-[40px] h-[53px] w-full md:h-[45px] transition-all duration-300 text-[#9e4a45] border-[#9e4a45] hover:text-white hover:bg-[#9e4a45] font-semibold">
+              <button className="border rounded-[40px] h-[53px] w-full md:h-[45px] transition-all duration-300 text-[#005F7F] border-[#005F7F] hover:text-white hover:bg-[#005F7F] font-semibold">
                 ОБМЕР ПОМЕЩЕНИЙ
               </button>
             </a>
             <a href="#planirovochnie" className="w-full">
-              <button className="border rounded-[40px] h-[53px] w-full md:h-[45px] transition-all duration-300 text-[#9e4a45] border-[#9e4a45] hover:text-white hover:bg-[#9e4a45] font-semibold">
+              <button className="border rounded-[40px] h-[53px] w-full md:h-[45px] transition-all duration-300 text-[#005F7F] border-[#005F7F] hover:text-white hover:bg-[#005F7F] font-semibold">
                 ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
               </button>
             </a>
@@ -151,7 +151,7 @@ const Planning = () => {
                   </div>
                 </span>
                 <a href="https://t.me/+998332634242">
-                  <button className="border rounded-[40px] h-[53px] w-[186px] md:w-[103px] md:text-sm md:h-[45px] transition-all duration-300 hover:text-[#9e4a45] border-[#9e4a45] text-white hover:bg-white bg-[#9e4a45] font-semibold">
+                  <button className="border rounded-[40px] h-[53px] w-[186px] md:w-[103px] md:text-sm md:h-[45px] transition-all duration-300 hover:text-[#005F7F] border-[#005F7F] text-white hover:bg-white bg-[#005F7F] font-semibold">
                     ЗАКАЗАТЬ
                   </button>
                 </a>
@@ -179,7 +179,7 @@ const Planning = () => {
           <div className="flex flex-col md:w-full">
             <div className="md:flex">
               <div className="py-5 border-t-2 md:border-r-2 border-gray-300 md:py-2 md:w-[420px]">
-                <h1 className="text-[38px] text-red-800">01</h1>
+                <h1 className="text-[38px] text-[#005F7F]">01</h1>
                 <div className="mt-7">
                   <h1 className="text-[22px] font-medium font-manrope">
                     ОБМЕР ПОМЕЩЕНИЯ
@@ -191,7 +191,7 @@ const Planning = () => {
                 </div>
               </div>
               <div className="py-5 border-t-2 border-gray-300 md:pl-5">
-                <h1 className="text-[38px] text-red-800">02</h1>
+                <h1 className="text-[38px] text-[#005F7F]">02</h1>
                 <div className="mt-7">
                   <h1 className="text-[22px] font-medium font-manrope pr-20">
                     СОСТАВЛЕНИЕ ТЕХНИЧЕСКОГО ЗАДАНИЯ
@@ -206,12 +206,12 @@ const Planning = () => {
             </div>
             <div className="md:flex">
               <div className="hidden md:flex md:w-[711px] border-t-2 border-r-2 border-gray-300 py-2 items-end">
-                <button className="flex border border-[#9e4a45] text-[#9e4a45] transition-all duration-300 w-[111px] h-[111px] rounded-full items-center justify-center font-semibold hover:bg-[#9e4a45] hover:text-white mt-6 ">
+                <button className="flex border border-[#005F7F] text-[#005F7F] transition-all duration-300 w-[111px] h-[111px] rounded-full items-center justify-center font-semibold hover:bg-[#005F7F] hover:text-white mt-6 ">
                   ПРИМЕР ПРОЕКТА
                 </button>
               </div>
               <div className="py-5 border-t-2 border-gray-300 md:pl-5 md:w-full">
-                <h1 className="text-[38px] text-red-800">03</h1>
+                <h1 className="text-[38px] text-[#005F7F]">03</h1>
                 <div className="mt-7">
                   <h1 className="text-[22px] font-medium font-manrope pr-20 md:max-w-[410px]">
                     ПЛАНИРОВОЧНОЕ РЕШЕНИЕ С РАССТАНОВКОЙ МЕБЕЛИ
@@ -276,7 +276,7 @@ const Planning = () => {
                       Стоимость:
                     </h1>
                     <span className="relative group">
-                      <IoIosInformationCircleOutline className="text-[24px] absolute md:right-[30px] right-[50px] cursor-pointer -top-[30px]" />
+                      <IoIosInformationCircleOutline className="text-[24px] absolute md:right-[30px] right-[20px] cursor-pointer -top-[30px]" />
                       <div className="absolute md:left-1/2 z-50 left-[160px] -translate-x-1/2 top-[120%] bg-white text-black text-[14px] p-4 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 w-[300px] hidden group-hover:block">
                         Классический, барокко, арт-деко и прочие сложные стили с
                         большим количеством декоративных элементов.
@@ -313,11 +313,11 @@ const Planning = () => {
                     </div>
                   </div>
                 </div>
-                <button className="flex md:hidden border border-[#9e4a45] text-[#9e4a45] transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-[#9e4a45] hover:text-white md:h-[40px] mt-4 md:mt-6 ">
+                <button className="flex md:hidden border border-[#005F7F] text-[#005F7F] transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-[#005F7F] hover:text-white md:h-[40px] mt-4 md:mt-6 ">
                   ПРИМЕР ПРОЕКТА
                 </button>
                 <a href="https://t.me/+998332634242" className="w-full">
-                <button className="flex bg-[#9e4a45] border border-[#9e4a45] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#9e4a45] md:w-full md:h-[40px] mt-2 md:mt-5 ">
+                <button className="flex bg-[#005F7F] border border-[#005F7F] text-white transition-all duration-300 w-full h-[53px] rounded-full items-center justify-center font-semibold hover:bg-white hover:text-[#005F7F] md:w-full md:h-[40px] mt-2 md:mt-5 ">
                   ЗАКАЗАТЬ
                 </button>
                 </a>

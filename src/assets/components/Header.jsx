@@ -21,7 +21,7 @@ const Header = () => {
           <li>
             <NavLink
               to={"/"}
-              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#005F7F] after:transition-all after:duration-300 hover:after:w-full"
             >
               ГЛАВНАЯ
             </NavLink>
@@ -29,7 +29,7 @@ const Header = () => {
           <li>
             <NavLink
               to={"/drawings"}
-              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#005F7F] after:transition-all after:duration-300 hover:after:w-full"
             >
               ЧЕРТЕЖИ
             </NavLink>
@@ -37,7 +37,7 @@ const Header = () => {
           <li>
             <NavLink
               to={"/visualization"}
-              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#005F7F] after:transition-all after:duration-300 hover:after:w-full"
             >
               ВИЗУАЛИЗАЦИЯ
             </NavLink>
@@ -45,7 +45,7 @@ const Header = () => {
           <li>
             <NavLink
               to={"/planning"}
-              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 hover:after:w-full"
+              className="relative pb-7 transition-opacity duration-300 opacity-70 hover:opacity-50 after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-[#005F7F] after:transition-all after:duration-300 hover:after:w-full"
             >
               ПЛАНИРОВОЧНОЕ РЕШЕНИЕ
             </NavLink>
